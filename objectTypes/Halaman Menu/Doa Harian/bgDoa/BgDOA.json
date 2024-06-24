@@ -1,0 +1,50 @@
+{
+	"name": "BgDOA",
+	"plugin-id": "Sprite",
+	"sid": 545872881830548,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1920,
+						"height": 1080,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 831101,
+						"collisionPoly": {
+							"points": [
+								0.0002531004808909137,
+								0.012532411408815903,
+								1,
+								0.012532411408815903,
+								1,
+								0.9878997407087294,
+								0.0002531004808909137,
+								0.9878997407087294
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 939347723127620,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,50 @@
+{
+	"name": "bgMenuTandaBaca",
+	"plugin-id": "Sprite",
+	"sid": 125701587440230,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1920,
+						"height": 1080,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4750593,
+						"collisionPoly": {
+							"points": [
+								0.0007616146230007616,
+								0,
+								0.9997461284589998,
+								0.0008775778850372971,
+								0.9992383853769993,
+								0.9995612110574813,
+								0.0002538715410002539,
+								0.998683633172444
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 489273825755445,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

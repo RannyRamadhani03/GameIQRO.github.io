@@ -1,0 +1,60 @@
+{
+	"name": "Contoh_6a",
+	"plugin-id": "Sprite",
+	"sid": 182503068158444,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 500,
+						"height": 200,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9861542,
+						"collisionPoly": {
+							"points": [
+								0.45149638802889575,
+								0.12450851900393185,
+								0.9473684210526315,
+								0.1598951507208388,
+								0.9298245614035088,
+								0.7706422018348624,
+								0.8338493292053664,
+								0.9239842726081258,
+								0.347781217750258,
+								0.9200524246395806,
+								0.058307533539731685,
+								0.6304062909567497,
+								0.04076367389060888,
+								0.5910878112712975,
+								0.0608875128998968,
+								0.34469200524246396,
+								0.2884416924664603,
+								0.17169069462647443
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 297198654544751,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

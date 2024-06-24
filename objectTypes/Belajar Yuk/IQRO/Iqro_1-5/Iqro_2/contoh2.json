@@ -1,0 +1,75 @@
+{
+	"name": "contoh2",
+	"plugin-id": "Sprite",
+	"sid": 976760982149447,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "AyatX",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 338829000555006
+		},
+		{
+			"name": "AyatY",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 532182617603823
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 833,
+						"height": 325,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2867945,
+						"collisionPoly": {
+							"points": [
+								0.5774309723889556,
+								0.05846153846153846,
+								0.7250900360144058,
+								0.06769230769230769,
+								0.8955582232893158,
+								0.24307692307692308,
+								0.8991596638655462,
+								0.6892307692307692,
+								0.8871548619447779,
+								0.7446153846153846,
+								0.2965186074429772,
+								0.9046153846153846,
+								0.08523409363745499,
+								0.6584615384615384,
+								0.20528211284513806,
+								0.2153846153846154,
+								0.3349339735894358,
+								0.15076923076923077
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 638810035663745,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,356 @@
+{
+	"name": "Game",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "IDGame",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 427202046427582
+		},
+		{
+			"eventType": "variable",
+			"name": "JawabanSoal",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 723544306592465
+		},
+		{
+			"eventType": "variable",
+			"name": "Pilihan",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 876761429369011
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 663458757045528
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "SetDataSounds",
+					"sid": 458893709048893
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 116591341318106,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"callFunction": "RandomSoal",
+					"sid": 642928960220503
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 296954589312077,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"callFunction": "SetSoal",
+					"sid": 727175107321008
+				}
+			],
+			"sid": 593271996693110
+		},
+		{
+			"functionName": "SetDataSounds",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "clear",
+					"objectClass": "DataSounds",
+					"sid": 959967642926839,
+					"parameters": {
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "DataSounds",
+					"sid": 764973456461141,
+					"parameters": {
+						"width": "5",
+						"height": "1",
+						"depth": "1"
+					}
+				},
+				{
+					"id": "set-at-x",
+					"objectClass": "DataSounds",
+					"sid": 979872707705008,
+					"parameters": {
+						"x": "1",
+						"value": "\"2i\""
+					}
+				},
+				{
+					"id": "set-at-x",
+					"objectClass": "DataSounds",
+					"sid": 648122474308130,
+					"parameters": {
+						"x": "2",
+						"value": "\"16n\""
+					}
+				},
+				{
+					"id": "set-at-x",
+					"objectClass": "DataSounds",
+					"sid": 391888651609849,
+					"parameters": {
+						"x": "1",
+						"value": "\"16aa\""
+					}
+				},
+				{
+					"id": "set-at-x",
+					"objectClass": "DataSounds",
+					"sid": 194893730056580,
+					"parameters": {
+						"x": "1",
+						"value": "\"1dd\""
+					}
+				}
+			],
+			"sid": 699041962779981
+		},
+		{
+			"functionName": "RandomSoal",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "clear",
+					"objectClass": "DataAcak",
+					"sid": 748667579880818,
+					"parameters": {
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "DataAcak",
+					"sid": 205784877351565,
+					"parameters": {
+						"width": "2",
+						"height": "1",
+						"depth": "1"
+					}
+				}
+			],
+			"sid": 973434975685507,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "rand",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 110414202897561
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for",
+							"objectClass": "System",
+							"sid": 429803389374326,
+							"parameters": {
+								"name": "\"random_soal\"",
+								"start-index": "0",
+								"end-index": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 789019331259706,
+							"parameters": {
+								"variable": "rand",
+								"value": "int(random(1,DataSounds.Width+1))"
+							}
+						}
+					],
+					"sid": 785044559228168,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "while",
+									"objectClass": "System",
+									"sid": 238119612042236
+								},
+								{
+									"id": "contains-value",
+									"objectClass": "DataAcak",
+									"sid": 677040722222446,
+									"parameters": {
+										"value": "rand"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 730710924852790,
+									"parameters": {
+										"variable": "rand",
+										"value": "int(random(1,DataSounds.Width+1))"
+									}
+								}
+							],
+							"sid": 335035534851265,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "set-at-x",
+											"objectClass": "DataAcak",
+											"sid": 497856412329358,
+											"parameters": {
+												"x": "loopindex(\"random_soal\")",
+												"value": "rand"
+											}
+										}
+									],
+									"sid": 786695702244377
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"functionName": "SetSoal",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 473673737302817,
+					"parameters": {
+						"variable": "JawabanSoal",
+						"value": "DataAcak.At(0)-1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 526938358667942,
+					"parameters": {
+						"variable": "Pilihan",
+						"value": "choose(1,2)"
+					}
+				}
+			],
+			"sid": 309834462840420,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 723933929361574,
+							"parameters": {
+								"variable": "Pilihan",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 175499612084853
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 784844549074159,
+							"parameters": {
+								"variable": "Pilihan",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 606660409187348,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "play-by-name",
+									"objectClass": "Audio",
+									"sid": 673106707751943,
+									"parameters": {
+										"folder": "sounds",
+										"audio-file-name": "\"7c\"",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 201392042416687
+						}
+					]
+				}
+			]
+		}
+	],
+	"sid": 813269736257394
+}

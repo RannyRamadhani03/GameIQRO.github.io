@@ -1,0 +1,2216 @@
+{
+	"name": "Iqro29_Eventsheet",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Iqro29",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 376392871658003
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "ON START LAYOUT IQRO29",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 741798838389168
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnKembali",
+							"sid": 191630901769801,
+							"parameters": {
+								"instance-variable": "UkuranX",
+								"value": "Self.Width"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnKembali",
+							"sid": 457460587595969,
+							"parameters": {
+								"instance-variable": "UkuranY",
+								"value": "Self.Height"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnSelanjutnya",
+							"sid": 413341724807867,
+							"parameters": {
+								"instance-variable": "UkuranX",
+								"value": "Self.Width"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnSelanjutnya",
+							"sid": 335329019411984,
+							"parameters": {
+								"instance-variable": "UkuranY",
+								"value": "Self.Height"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "peringatan",
+							"sid": 518551306662853,
+							"parameters": {
+								"instance-variable": "UkuranX",
+								"value": "Self.Width"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "peringatan",
+							"sid": 339671988628943,
+							"parameters": {
+								"instance-variable": "UkuranY",
+								"value": "Self.Height"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnMenu",
+							"sid": 881493250917108,
+							"parameters": {
+								"instance-variable": "UkuranX",
+								"value": "Self.Width"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnMenu",
+							"sid": 833833636669971,
+							"parameters": {
+								"instance-variable": "UkuranY",
+								"value": "Self.Height"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnKeluar",
+							"sid": 390389117177492,
+							"parameters": {
+								"instance-variable": "UkuranX",
+								"value": "Self.Width"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnKeluar",
+							"sid": 313843034521624,
+							"parameters": {
+								"instance-variable": "UkuranY",
+								"value": "Self.Height"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "EBTA",
+							"sid": 610473994493280,
+							"parameters": {
+								"instance-variable": "UkuranX",
+								"value": "Self.Width"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "EBTA",
+							"sid": 767754813410957,
+							"parameters": {
+								"instance-variable": "UkuranY",
+								"value": "Self.Height"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "29a",
+							"sid": 146953845552648,
+							"parameters": {
+								"instance-variable": "AyatX",
+								"value": "Self.Width"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "29a",
+							"sid": 830708483732475,
+							"parameters": {
+								"instance-variable": "AyatY",
+								"value": "Self.Height"
+							}
+						},
+						{
+							"id": "reset-global-variables",
+							"objectClass": "System",
+							"sid": 679260538551279
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 474323206732286,
+							"parameters": {
+								"audio-file": "Materi15",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 408013630692837
+				}
+			],
+			"sid": 431347026290640
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "SizeLayout IQRO29",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 320975768198880,
+							"parameters": {
+								"object": "btnKembali"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 614981842403815,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-any-touch-end",
+									"objectClass": "Touch",
+									"sid": 160626699157723
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 808310527202055,
+									"parameters": {
+										"layout": "Iqro_28"
+									}
+								}
+							],
+							"sid": 101754475865009
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 376154801222765,
+							"parameters": {
+								"object": "btnSelanjutnya"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 301928250751855,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-any-touch-end",
+									"objectClass": "Touch",
+									"sid": 789967765132130
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 673016712315079,
+									"parameters": {
+										"layout": "Iqro_30"
+									}
+								}
+							],
+							"sid": 873159071061892
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 181558104502358,
+							"parameters": {
+								"object": "btnMenu"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 223259218666880,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-any-touch-end",
+									"objectClass": "Touch",
+									"sid": 190304369648489
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 804956978883689,
+									"parameters": {
+										"layout": "MenuIQRO"
+									}
+								}
+							],
+							"sid": 328012592011822
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 238045201294006,
+							"parameters": {
+								"object": "EBTA"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 325021884044802,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-any-touch-end",
+									"objectClass": "Touch",
+									"sid": 333004078466754
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 484140804245498,
+									"parameters": {
+										"layout": "MATERI29"
+									}
+								}
+							],
+							"sid": 752042583961480
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 447833660881276,
+							"parameters": {
+								"object": "EBTA",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 710212152726811
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "EBTA",
+							"sid": 531511099447185,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "Self.UkuranX+50",
+								"end-y": "Self.UkuranY+50",
+								"time": "0.2",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 674700927567897,
+							"parameters": {
+								"seconds": "0.2"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "EBTA",
+							"sid": 252034492934456,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "Self.UkuranX",
+								"end-y": "Self.UkuranY",
+								"time": "0.2",
+								"ease": "easeinback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						}
+					],
+					"sid": 303986691882949
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 434193932943774,
+							"parameters": {
+								"object": "btnMenu",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 469469221507018
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "btnMenu",
+							"sid": 417063510736517,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "Self.UkuranX+50",
+								"end-y": "Self.UkuranY+50",
+								"time": "0.2",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 556405341662182,
+							"parameters": {
+								"seconds": "0.2"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "btnMenu",
+							"sid": 138384291683259,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "Self.UkuranX",
+								"end-y": "Self.UkuranY",
+								"time": "0.2",
+								"ease": "easeinback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						}
+					],
+					"sid": 719009293386391
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 782812836445120,
+							"parameters": {
+								"object": "btnKembali",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 358777457270969
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "btnKembali",
+							"sid": 996899743390171,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "Self.UkuranX+50",
+								"end-y": "Self.UkuranY+50",
+								"time": "0.2",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 828210436931302,
+							"parameters": {
+								"seconds": "0.2"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "btnKembali",
+							"sid": 966835023503479,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "Self.UkuranX",
+								"end-y": "Self.UkuranY",
+								"time": "0.2",
+								"ease": "easeinback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						}
+					],
+					"sid": 828895056911010
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 486614985960941,
+							"parameters": {
+								"object": "btnSelanjutnya",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 925573202947306
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "btnSelanjutnya",
+							"sid": 110961618243421,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "Self.UkuranX+50",
+								"end-y": "Self.UkuranY+50",
+								"time": "0.2",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 813669710027187,
+							"parameters": {
+								"seconds": "0.2"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "btnSelanjutnya",
+							"sid": 427487829940855,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "Self.UkuranX",
+								"end-y": "Self.UkuranY",
+								"time": "0.2",
+								"ease": "easeinback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						}
+					],
+					"sid": 624655752906579
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 388827543575796,
+							"parameters": {
+								"object": "btnKeluar"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 921671332599127,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-any-touch-end",
+									"objectClass": "Touch",
+									"sid": 569091816982941
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 543703083755874,
+									"parameters": {
+										"layout": "BelajarYuk"
+									}
+								}
+							],
+							"sid": 556831529267962
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 668186453081022,
+							"parameters": {
+								"object": "btnKeluar",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 423056376258578
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "btnKeluar",
+							"sid": 765521057906092,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "Self.UkuranX+50",
+								"end-y": "Self.UkuranY+50",
+								"time": "0.2",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 294271047344800,
+							"parameters": {
+								"seconds": "0.2"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "btnKeluar",
+							"sid": 343521721817009,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "Self.UkuranX",
+								"end-y": "Self.UkuranY",
+								"time": "0.2",
+								"ease": "easeinback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						}
+					],
+					"sid": 477070345339917
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 224220077606209,
+							"parameters": {
+								"object": "btnMateri_sifat",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 829998108509076,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "btnMateri_sifat",
+									"sid": 405616174011647,
+									"parameters": {
+										"comparison": 0,
+										"number": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 576275308556573,
+									"parameters": {
+										"audio-file": "Materi15",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnMateri_sifat",
+									"sid": 968328497082833,
+									"parameters": {
+										"frame-number": "2"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 940008082714538,
+									"parameters": {
+										"seconds": "9"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnMateri_sifat",
+									"sid": 802957648672618,
+									"parameters": {
+										"frame-number": "1"
+									}
+								}
+							],
+							"sid": 436476659090464
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 780427182962043
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 749798158413433
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnMateri_sifat",
+									"sid": 442811331578881,
+									"parameters": {
+										"frame-number": "1"
+									}
+								}
+							],
+							"sid": 547340701506623
+						}
+					]
+				}
+			],
+			"sid": 641153651363877
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "FunctionLayout IQRO29",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"functionName": "Iqro29_1",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 694941167052992,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 114552296240686,
+									"parameters": {
+										"variable": "Iqro29",
+										"comparison": 0,
+										"value": "0"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "29a",
+									"sid": 235066696912535,
+									"parameters": {
+										"comparison": 0,
+										"number": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 300891881026393
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 610459231944238,
+									"parameters": {
+										"audio-file": "1AD",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "29a",
+									"sid": 119890902334347,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.AyatX+50",
+										"end-y": "Self.AyatY+50",
+										"time": "0.2",
+										"ease": "default",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "29a",
+									"sid": 425596710696821,
+									"parameters": {
+										"frame-number": "13"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 662456316911409,
+									"parameters": {
+										"seconds": "6"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "29a",
+									"sid": 555750747028267,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "29a",
+									"sid": 586594213592745,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.AyatX",
+										"end-y": "Self.AyatY",
+										"time": "0.2",
+										"ease": "easeinback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 293505113191893
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 463227686022258,
+									"parameters": {
+										"variable": "Iqro29",
+										"comparison": 0,
+										"value": "1"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "29a",
+									"sid": 469582595952791,
+									"parameters": {
+										"comparison": 0,
+										"number": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 882923219113236
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 739657331936793,
+									"parameters": {
+										"audio-file": "2AD",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "29a",
+									"sid": 274096473399477,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.AyatX+50",
+										"end-y": "Self.AyatY+50",
+										"time": "0.2",
+										"ease": "default",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "29a",
+									"sid": 968945531645122,
+									"parameters": {
+										"frame-number": "14"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 818542856655965,
+									"parameters": {
+										"seconds": "7"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "29a",
+									"sid": 184794138204986,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "29a",
+									"sid": 649019849909885,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.AyatX",
+										"end-y": "Self.AyatY",
+										"time": "0.2",
+										"ease": "easeinback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 437117946312485
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 845506832220109,
+									"parameters": {
+										"variable": "Iqro29",
+										"comparison": 0,
+										"value": "2"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "29a",
+									"sid": 626299323727147,
+									"parameters": {
+										"comparison": 0,
+										"number": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 719757035413323
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 304295324179125,
+									"parameters": {
+										"audio-file": "3AD",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "29a",
+									"sid": 953543962377502,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.AyatX+50",
+										"end-y": "Self.AyatY+50",
+										"time": "0.2",
+										"ease": "default",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "29a",
+									"sid": 385806511931054,
+									"parameters": {
+										"frame-number": "15"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 729655590476250,
+									"parameters": {
+										"seconds": "11.5"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "29a",
+									"sid": 673278342629469,
+									"parameters": {
+										"frame-number": "2"
+									}
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "29a",
+									"sid": 137063748722548,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.AyatX",
+										"end-y": "Self.AyatY",
+										"time": "0.2",
+										"ease": "easeinback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 883830439669726
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 966654242217883,
+									"parameters": {
+										"variable": "Iqro29",
+										"comparison": 0,
+										"value": "3"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "29a",
+									"sid": 661088332815058,
+									"parameters": {
+										"comparison": 0,
+										"number": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 761249671318291
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 626482330718986,
+									"parameters": {
+										"audio-file": "4AD",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "29a",
+									"sid": 457487821562826,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.AyatX+50",
+										"end-y": "Self.AyatY+50",
+										"time": "0.2",
+										"ease": "default",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "29a",
+									"sid": 214538662543600,
+									"parameters": {
+										"frame-number": "16"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 269084694528903,
+									"parameters": {
+										"seconds": "6"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "29a",
+									"sid": 928699456199925,
+									"parameters": {
+										"frame-number": "3"
+									}
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "29a",
+									"sid": 853054336150487,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.AyatX",
+										"end-y": "Self.AyatY",
+										"time": "0.2",
+										"ease": "easeinback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 120576485520330
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 464307497083854,
+									"parameters": {
+										"variable": "Iqro29",
+										"comparison": 0,
+										"value": "4"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "29a",
+									"sid": 161101991972418,
+									"parameters": {
+										"comparison": 0,
+										"number": "4"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 215397423181016
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 312385217722936,
+									"parameters": {
+										"audio-file": "5AD",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "29a",
+									"sid": 503698665996193,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.AyatX+50",
+										"end-y": "Self.AyatY+50",
+										"time": "0.2",
+										"ease": "default",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "29a",
+									"sid": 369550217987585,
+									"parameters": {
+										"frame-number": "17"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 881219767763039,
+									"parameters": {
+										"seconds": "6"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "29a",
+									"sid": 142712905191259,
+									"parameters": {
+										"frame-number": "4"
+									}
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "29a",
+									"sid": 894161136048309,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.AyatX",
+										"end-y": "Self.AyatY",
+										"time": "0.2",
+										"ease": "easeinback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 828467649081409
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 857106428058295,
+									"parameters": {
+										"variable": "Iqro29",
+										"comparison": 0,
+										"value": "5"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "29a",
+									"sid": 284325802828464,
+									"parameters": {
+										"comparison": 0,
+										"number": "5"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 224996272736309
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 608242601196548,
+									"parameters": {
+										"audio-file": "6AD",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "29a",
+									"sid": 253971941195247,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.AyatX+50",
+										"end-y": "Self.AyatY+50",
+										"time": "0.2",
+										"ease": "default",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "29a",
+									"sid": 272153664414785,
+									"parameters": {
+										"frame-number": "18"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 706695984707344,
+									"parameters": {
+										"seconds": "6"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "29a",
+									"sid": 108735457475066,
+									"parameters": {
+										"frame-number": "5"
+									}
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "29a",
+									"sid": 573802960819487,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.AyatX",
+										"end-y": "Self.AyatY",
+										"time": "0.2",
+										"ease": "easeinback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 502178783726751
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 670706856238498,
+									"parameters": {
+										"variable": "Iqro29",
+										"comparison": 0,
+										"value": "6"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "29a",
+									"sid": 166746884786317,
+									"parameters": {
+										"comparison": 0,
+										"number": "6"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 496811541407333
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 630191455736393,
+									"parameters": {
+										"audio-file": "7AD",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "29a",
+									"sid": 379320361581849,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.AyatX+50",
+										"end-y": "Self.AyatY+50",
+										"time": "0.2",
+										"ease": "default",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "29a",
+									"sid": 898042093299615,
+									"parameters": {
+										"frame-number": "19"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 532830080502876,
+									"parameters": {
+										"seconds": "6"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "29a",
+									"sid": 623434366059882,
+									"parameters": {
+										"frame-number": "6"
+									}
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "29a",
+									"sid": 657521554161860,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.AyatX",
+										"end-y": "Self.AyatY",
+										"time": "0.2",
+										"ease": "easeinback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 628247260477584
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 869768141836930,
+									"parameters": {
+										"variable": "Iqro29",
+										"comparison": 0,
+										"value": "7"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "29a",
+									"sid": 268713437195867,
+									"parameters": {
+										"comparison": 0,
+										"number": "7"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 147088495467041
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 185815809302122,
+									"parameters": {
+										"audio-file": "8AD",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "29a",
+									"sid": 687984300215049,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.AyatX+50",
+										"end-y": "Self.AyatY+50",
+										"time": "0.2",
+										"ease": "default",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "29a",
+									"sid": 482441512748819,
+									"parameters": {
+										"frame-number": "20"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 278378510521445,
+									"parameters": {
+										"seconds": "6"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "29a",
+									"sid": 991300982717987,
+									"parameters": {
+										"frame-number": "7"
+									}
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "29a",
+									"sid": 961557819469601,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.AyatX",
+										"end-y": "Self.AyatY",
+										"time": "0.2",
+										"ease": "easeinback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 281766608310790
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 753796231203207,
+									"parameters": {
+										"variable": "Iqro29",
+										"comparison": 0,
+										"value": "8"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "29a",
+									"sid": 552082333338021,
+									"parameters": {
+										"comparison": 0,
+										"number": "8"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 668287256271486
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 761507897903820,
+									"parameters": {
+										"audio-file": "9AD",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "29a",
+									"sid": 622184816258267,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.AyatX+50",
+										"end-y": "Self.AyatY+50",
+										"time": "0.2",
+										"ease": "default",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "29a",
+									"sid": 565875227999945,
+									"parameters": {
+										"frame-number": "21"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 306115250249828,
+									"parameters": {
+										"seconds": "6"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "29a",
+									"sid": 458240129800099,
+									"parameters": {
+										"frame-number": "8"
+									}
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "29a",
+									"sid": 402816343691137,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.AyatX",
+										"end-y": "Self.AyatY",
+										"time": "0.2",
+										"ease": "easeinback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 576176742921682
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 906101811413912,
+									"parameters": {
+										"variable": "Iqro29",
+										"comparison": 0,
+										"value": "9"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "29a",
+									"sid": 216652318329803,
+									"parameters": {
+										"comparison": 0,
+										"number": "9"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 324329923356790
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 496376166595032,
+									"parameters": {
+										"audio-file": "10AD",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "29a",
+									"sid": 123619953066197,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.AyatX+50",
+										"end-y": "Self.AyatY+50",
+										"time": "0.2",
+										"ease": "default",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "29a",
+									"sid": 710334723322283,
+									"parameters": {
+										"frame-number": "22"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 290710966362672,
+									"parameters": {
+										"seconds": "6"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "29a",
+									"sid": 981237663748304,
+									"parameters": {
+										"frame-number": "9"
+									}
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "29a",
+									"sid": 248584533955304,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.AyatX",
+										"end-y": "Self.AyatY",
+										"time": "0.2",
+										"ease": "easeinback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 669135059113927
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 884301567213730,
+									"parameters": {
+										"variable": "Iqro29",
+										"comparison": 0,
+										"value": "10"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "29a",
+									"sid": 177953519452239,
+									"parameters": {
+										"comparison": 0,
+										"number": "10"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 544631631557780
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 320502924436051,
+									"parameters": {
+										"audio-file": "11AD",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "29a",
+									"sid": 568791137394012,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.AyatX+50",
+										"end-y": "Self.AyatY+50",
+										"time": "0.2",
+										"ease": "default",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "29a",
+									"sid": 669257242094040,
+									"parameters": {
+										"frame-number": "23"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 917960982707830,
+									"parameters": {
+										"seconds": "6"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "29a",
+									"sid": 534718746147743,
+									"parameters": {
+										"frame-number": "10"
+									}
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "29a",
+									"sid": 325517162723324,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.AyatX",
+										"end-y": "Self.AyatY",
+										"time": "0.2",
+										"ease": "easeinback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 369801720386313
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 893881286778590,
+									"parameters": {
+										"variable": "Iqro29",
+										"comparison": 0,
+										"value": "11"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "29a",
+									"sid": 667939634849223,
+									"parameters": {
+										"comparison": 0,
+										"number": "11"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 137783821676267
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 615149266581385,
+									"parameters": {
+										"audio-file": "12AD",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "29a",
+									"sid": 250389436979925,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.AyatX+50",
+										"end-y": "Self.AyatY+50",
+										"time": "0.2",
+										"ease": "default",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "29a",
+									"sid": 867681424885482,
+									"parameters": {
+										"frame-number": "24"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 729133806709163,
+									"parameters": {
+										"seconds": "6"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "29a",
+									"sid": 753786498968949,
+									"parameters": {
+										"frame-number": "11"
+									}
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "29a",
+									"sid": 461112991342799,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.AyatX",
+										"end-y": "Self.AyatY",
+										"time": "0.2",
+										"ease": "easeinback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 569782465187143
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 902465918297672,
+									"parameters": {
+										"variable": "Iqro29",
+										"comparison": 0,
+										"value": "12"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "29a",
+									"sid": 940845401417286,
+									"parameters": {
+										"comparison": 0,
+										"number": "12"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 571636134228586
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 496141422137913,
+									"parameters": {
+										"audio-file": "13AD",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "29a",
+									"sid": 598995218685567,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.AyatX+50",
+										"end-y": "Self.AyatY+50",
+										"time": "0.2",
+										"ease": "default",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "29a",
+									"sid": 222924047564632,
+									"parameters": {
+										"frame-number": "25"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 549506197740593,
+									"parameters": {
+										"seconds": "6"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "29a",
+									"sid": 979576366604088,
+									"parameters": {
+										"frame-number": "12"
+									}
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "29a",
+									"sid": 747613753034337,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.AyatX",
+										"end-y": "Self.AyatY",
+										"time": "0.2",
+										"ease": "easeinback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 462375851054074
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 487271364792898,
+							"parameters": {
+								"object": "29a",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 156076041090059,
+							"parameters": {
+								"variable": "Iqro29",
+								"value": "29a.AnimationFrame"
+							}
+						},
+						{
+							"callFunction": "Iqro29_1",
+							"sid": 112093521464607
+						}
+					],
+					"sid": 639948871186617
+				}
+			],
+			"sid": 190429908724130
+		}
+	],
+	"sid": 765494415474009
+}

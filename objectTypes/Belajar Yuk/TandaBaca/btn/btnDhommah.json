@@ -1,0 +1,96 @@
+{
+	"name": "btnDhommah",
+	"plugin-id": "Sprite",
+	"sid": 192323652072737,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "UkuranX",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 296339896375702
+		},
+		{
+			"name": "UkuranY",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 488088338869281
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 930801747897808
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 999,
+						"height": 1012,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3987820,
+						"collisionPoly": {
+							"points": [
+								0.011660188784008884,
+								0.009389671361502348,
+								0.9927817878956136,
+								0.018779342723004695,
+								0.9888950583009439,
+								0.9953051643192489,
+								0.007773459189339256,
+								0.9859154929577465
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 999,
+						"height": 1012,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6508028,
+						"collisionPoly": {
+							"points": [
+								0.011660188784008884,
+								0.009389671361502348,
+								0.9927817878956136,
+								0.018779342723004695,
+								0.9888950583009439,
+								0.9953051643192489,
+								0.007773459189339256,
+								0.9859154929577465
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 115460418474842,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

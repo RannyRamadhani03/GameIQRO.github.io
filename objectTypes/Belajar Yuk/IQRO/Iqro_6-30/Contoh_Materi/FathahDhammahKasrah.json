@@ -1,0 +1,54 @@
+{
+	"name": "FathahDhammahKasrah",
+	"plugin-id": "Sprite",
+	"sid": 756823118918550,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 305,
+						"height": 182,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5858993,
+						"collisionPoly": {
+							"points": [
+								0.2721311475409836,
+								0,
+								0.8524590163934426,
+								0.17582417582417584,
+								0.9967213114754099,
+								0.6703296703296703,
+								0.36065573770491804,
+								1,
+								0.003278688524590164,
+								0.6703296703296703,
+								0.003278688524590164,
+								0.6263736263736264
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 236850477528823,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

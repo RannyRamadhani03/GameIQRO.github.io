@@ -1,0 +1,75 @@
+{
+	"name": "BgSplashscreen",
+	"plugin-id": "Sprite",
+	"sid": 836078999897164,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1920,
+						"height": 1080,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 627522,
+						"collisionPoly": {
+							"points": [
+								0.0005202913631633715,
+								0.0009242144177449168,
+								0.9992262299722151,
+								0.0009242144177449168,
+								0.9994797086368367,
+								0.9986343209333544,
+								0.0005202913631633715,
+								0.9986343209333544
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 1920,
+						"height": 1080,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 211605,
+						"collisionPoly": {
+							"points": [
+								0.0005208333333333333,
+								0,
+								1,
+								0.000925925925925926,
+								0.9994791666666667,
+								1,
+								0.0005208333333333333,
+								0.9990740740740741
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 538288352832069,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

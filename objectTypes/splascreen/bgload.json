@@ -1,0 +1,21 @@
+{
+	"name": "bgload",
+	"plugin-id": "TiledBg",
+	"sid": 880927701586264,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 812,
+		"height": 143,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 9859057,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

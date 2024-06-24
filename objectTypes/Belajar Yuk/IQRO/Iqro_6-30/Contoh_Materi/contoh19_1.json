@@ -1,0 +1,60 @@
+{
+	"name": "contoh19_1",
+	"plugin-id": "Sprite",
+	"sid": 468138499772427,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 222,
+						"height": 388,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2652239,
+						"collisionPoly": {
+							"points": [
+								0.6171171171171171,
+								0,
+								0.6711711711711712,
+								0,
+								0.7567567567567568,
+								0.01288659793814433,
+								1,
+								0.2190721649484536,
+								0.8108108108108109,
+								0.7422680412371134,
+								0.7747747747747747,
+								0.7628865979381443,
+								0,
+								0.9690721649484536,
+								0.02252252252252252,
+								0.8711340206185567,
+								0.35585585585585583,
+								0.06958762886597938
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 639309328160478,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

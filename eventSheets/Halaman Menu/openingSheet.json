@@ -1,0 +1,118 @@
+{
+	"name": "openingSheet",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "opening",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 903805080316841
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Sounds",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 850081019462334
+						}
+					],
+					"actions": [],
+					"sid": 880338906684756,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-tag-playing",
+									"objectClass": "Audio",
+									"sid": 681521218544603,
+									"parameters": {
+										"tag": "\"opening\""
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 725535801389318,
+									"parameters": {
+										"audio-file": "opening",
+										"loop": "looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"opening\""
+									}
+								}
+							],
+							"sid": 856573288676198
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 361351910734962,
+							"parameters": {
+								"variable": "opening",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-muted",
+							"objectClass": "Audio",
+							"sid": 125882006046641,
+							"parameters": {
+								"tag": "\"opening\"",
+								"state": "muted"
+							}
+						}
+					],
+					"sid": 851926252274665
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 423903293385968
+						}
+					],
+					"actions": [
+						{
+							"id": "set-muted",
+							"objectClass": "Audio",
+							"sid": 210665321157202,
+							"parameters": {
+								"tag": "\"opening\"",
+								"state": "unmuted"
+							}
+						}
+					],
+					"sid": 801970752956698
+				}
+			],
+			"sid": 948480531993084
+		}
+	],
+	"sid": 328040757507375
+}

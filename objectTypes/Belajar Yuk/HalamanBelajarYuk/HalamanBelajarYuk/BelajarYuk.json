@@ -1,0 +1,50 @@
+{
+	"name": "BelajarYuk",
+	"plugin-id": "Sprite",
+	"sid": 459903017858675,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1920,
+						"height": 1080,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7320371,
+						"collisionPoly": {
+							"points": [
+								0.0002498750624687656,
+								0,
+								0.9997501249375312,
+								0,
+								0.9997501249375312,
+								0.9995711835334476,
+								0.0002498750624687656,
+								0.9995711835334476
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 721934098049349,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,50 @@
+{
+	"name": "bgInformasi",
+	"plugin-id": "Sprite",
+	"sid": 762241365572023,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1920,
+						"height": 1080,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3685421,
+						"collisionPoly": {
+							"points": [
+								0.0156824024489295,
+								0.01373197623764881,
+								0.9915258142967627,
+								0.025258961875562314,
+								0.9840690383529431,
+								0.9858410983683543,
+								0.008474185703237406,
+								0.976448739700425
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 320276504352158,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

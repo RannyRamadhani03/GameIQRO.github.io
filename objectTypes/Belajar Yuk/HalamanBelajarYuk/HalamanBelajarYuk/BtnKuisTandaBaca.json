@@ -1,0 +1,96 @@
+{
+	"name": "BtnKuisTandaBaca",
+	"plugin-id": "Sprite",
+	"sid": 220906927764469,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "UkuranX",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 698008913075325
+		},
+		{
+			"name": "UkuranY",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 168969324854458
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 357347500092045
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 635,
+						"height": 243,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3694654,
+						"collisionPoly": {
+							"points": [
+								0.07766470273165506,
+								0.06490384615384616,
+								0.9416175682913765,
+								0.07932692307692307,
+								0.9228709159078736,
+								0.9338942307692307,
+								0.04231387252276379,
+								0.890625
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 1000,
+						"height": 1000,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5546113,
+						"collisionPoly": {
+							"points": [
+								0.09294871794871795,
+								0.06724511930585683,
+								0.9508547008547008,
+								0.11496746203904555,
+								0.8899572649572649,
+								0.9349240780911063,
+								0.04807692307692308,
+								0.8872017353579176
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 478816231793142,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

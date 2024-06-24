@@ -1,0 +1,145 @@
+{
+	"name": "btnCredits",
+	"plugin-id": "Sprite",
+	"sid": 103006624435421,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "UkuranX",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 227511081282572
+		},
+		{
+			"name": "UkuranY",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 639378607653925
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 653049311115406
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 391,
+						"height": 390,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2152147,
+						"collisionPoly": {
+							"points": [
+								0.4571917808219178,
+								0.06666666666666667,
+								0.5445205479452054,
+								0.06666666666666667,
+								0.934931506849315,
+								0.46153846153846156,
+								0.934931506849315,
+								0.5384615384615384,
+								0.4691780821917808,
+								0.935042735042735,
+								0.06506849315068493,
+								0.5316239316239316,
+								0.06506849315068493,
+								0.4666666666666667,
+								0.1695205479452055,
+								0.2153846153846154
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 391,
+						"height": 391,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3456139,
+						"collisionPoly": {
+							"points": [
+								0.47058823529411764,
+								0.06649616368286446,
+								0.5268542199488491,
+								0.06649616368286446,
+								0.8337595907928389,
+								0.7774936061381074,
+								0.7800511508951407,
+								0.8312020460358056,
+								0.4859335038363171,
+								0.9335038363171355,
+								0.06649616368286446,
+								0.5268542199488491,
+								0.06649616368286446,
+								0.4731457800511509,
+								0.17647058823529413,
+								0.20971867007672634
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 391,
+						"height": 391,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3117266,
+						"collisionPoly": {
+							"points": [
+								0.47058823529411764,
+								0.06649616368286446,
+								0.5268542199488491,
+								0.06649616368286446,
+								0.9335038363171355,
+								0.5217391304347826,
+								0.8337595907928389,
+								0.7774936061381074,
+								0.7800511508951407,
+								0.8312020460358056,
+								0.5524296675191815,
+								0.9309462915601023,
+								0.4936061381074169,
+								0.9335038363171355,
+								0.17647058823529413,
+								0.20971867007672634
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 462405491802552,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

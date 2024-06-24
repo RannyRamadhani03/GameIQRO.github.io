@@ -1,0 +1,75 @@
+{
+	"name": "bgHalamanKuis",
+	"plugin-id": "Sprite",
+	"sid": 335354657868800,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1920,
+						"height": 1080,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6604685,
+						"collisionPoly": {
+							"points": [
+								0.0007583417593528817,
+								0.0008849557522123894,
+								0.9994944388270981,
+								0.001327433628318584,
+								0.9992416582406471,
+								1,
+								0.0007583417593528817,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 1920,
+						"height": 1080,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9937045,
+						"collisionPoly": {
+							"points": [
+								0.03632033343256922,
+								0.0019267822736030828,
+								0.9907710628163143,
+								0.033397559409120106,
+								0.9639773742185174,
+								0.9987154784842646,
+								0.009526644834772254,
+								0.9672447013487476
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 269042765879683,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

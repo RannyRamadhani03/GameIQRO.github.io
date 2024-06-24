@@ -1,0 +1,368 @@
+{
+	"name": "MATERI30_",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "ebta30",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 529775519269733
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "ON START LAYOUT Materi30",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 617517330395853
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "back",
+							"sid": 256040235643470,
+							"parameters": {
+								"instance-variable": "UkuranX",
+								"value": "Self.Width"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "back",
+							"sid": 712606284351758,
+							"parameters": {
+								"instance-variable": "UkuranY",
+								"value": "Self.Height"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnAudio",
+							"sid": 992738999271717,
+							"parameters": {
+								"instance-variable": "UkuranX",
+								"value": "Self.Width"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnAudio",
+							"sid": 661725727062287,
+							"parameters": {
+								"instance-variable": "UkuranY",
+								"value": "Self.Height"
+							}
+						}
+					],
+					"sid": 290631433389809
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 945567719944784,
+							"parameters": {
+								"object": "back"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 804833482474321,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-any-touch-end",
+									"objectClass": "Touch",
+									"sid": 442564198371767
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 344558012348574,
+									"parameters": {
+										"layout": "Iqro_30"
+									}
+								}
+							],
+							"sid": 989097074294511
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 869534848920862,
+							"parameters": {
+								"object": "back",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 259508862844226
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "back",
+							"sid": 270667919353797,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "Self.UkuranX+50",
+								"end-y": "Self.UkuranY+50",
+								"time": "0.2",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 783316340149966,
+							"parameters": {
+								"seconds": "0.2"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "back",
+							"sid": 133507404856733,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "Self.UkuranX",
+								"end-y": "Self.UkuranY",
+								"time": "0.2",
+								"ease": "easeinback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						}
+					],
+					"sid": 869291148012833
+				},
+				{
+					"functionName": "ebta30",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 282106412001733,
+							"parameters": {
+								"audio-file": "ebta30",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "btnAudio",
+							"sid": 990980156307035,
+							"parameters": {
+								"frame-number": "1"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "btnAudio",
+							"sid": 743023784088931,
+							"parameters": {
+								"frame-number": "2"
+							}
+						}
+					],
+					"sid": 489288195637465
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "SET_SOUNDS ebta30",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 227031067025743,
+									"parameters": {
+										"object": "btnAudio",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "tween-two-properties",
+									"objectClass": "btnAudio",
+									"sid": 732555105289654,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.UkuranX+50",
+										"end-y": "Self.UkuranY+50",
+										"time": "0.2",
+										"ease": "easeoutback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 708436257024697,
+									"parameters": {
+										"seconds": "0.2"
+									}
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "btnAudio",
+									"sid": 647315483166781,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.UkuranX",
+										"end-y": "Self.UkuranY",
+										"time": "0.2",
+										"ease": "easeinback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"callFunction": "ebta30",
+									"sid": 203365241525407
+								}
+							],
+							"sid": 283884119791746,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 910284361157782,
+											"parameters": {
+												"variable": "ebta30",
+												"comparison": 0,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 130849805012367,
+											"parameters": {
+												"variable": "ebta30",
+												"value": "1"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "btnAudio",
+											"sid": 790560561151628,
+											"parameters": {
+												"frame-number": "1"
+											}
+										}
+									],
+									"sid": 158801599571112
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 734165585490752
+										}
+									],
+									"actions": [
+										{
+											"id": "stop-all",
+											"objectClass": "Audio",
+											"sid": 117772735570126
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 747011196627460,
+											"parameters": {
+												"variable": "ebta30",
+												"value": "0"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "btnAudio",
+											"sid": 503203622377605,
+											"parameters": {
+												"frame-number": "2"
+											}
+										}
+									],
+									"sid": 484647952638058
+								}
+							]
+						}
+					],
+					"sid": 569778474736636
+				}
+			],
+			"sid": 831511642455287
+		}
+	],
+	"sid": 509622977074361
+}

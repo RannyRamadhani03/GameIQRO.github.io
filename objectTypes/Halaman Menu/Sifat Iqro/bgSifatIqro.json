@@ -1,0 +1,50 @@
+{
+	"name": "bgSifatIqro",
+	"plugin-id": "Sprite",
+	"sid": 649150772621970,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1920,
+						"height": 1080,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5499859,
+						"collisionPoly": {
+							"points": [
+								0.0069982504373906525,
+								0.012241452089489235,
+								0.9997500624843789,
+								0.016040523427606587,
+								0.9997500624843789,
+								0.9995778809624314,
+								0.00024993751562109475,
+								0.9995778809624314
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 456956262599317,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

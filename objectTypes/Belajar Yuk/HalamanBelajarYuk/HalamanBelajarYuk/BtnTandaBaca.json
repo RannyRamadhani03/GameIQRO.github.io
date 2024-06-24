@@ -1,0 +1,77 @@
+{
+	"name": "BtnTandaBaca",
+	"plugin-id": "Sprite",
+	"sid": 437522126403301,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "UkuranX",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 232643411120701
+		},
+		{
+			"name": "UkuranY",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 418595547636508
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 494013322215625
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1000,
+						"height": 1000,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6903132,
+						"collisionPoly": {
+							"points": [
+								0.13221884498480244,
+								0.0628992628992629,
+								0.867274569402229,
+								0.0628992628992629,
+								0.9346504559270516,
+								0.12383292383292384,
+								0.8703140830800405,
+								0.9366093366093367,
+								0.08308004052684904,
+								0.913022113022113,
+								0.06484295845997974,
+								0.8722358722358723,
+								0.06484295845997974,
+								0.12727272727272726
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 978579371912742,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

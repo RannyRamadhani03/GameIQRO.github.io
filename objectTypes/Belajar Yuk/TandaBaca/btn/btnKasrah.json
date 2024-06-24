@@ -1,0 +1,96 @@
+{
+	"name": "btnKasrah",
+	"plugin-id": "Sprite",
+	"sid": 899116223027985,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "UkuranX",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 417294617189852
+		},
+		{
+			"name": "UkuranY",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 646291341664141
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 302451662105539
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 999,
+						"height": 1012,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2396465,
+						"collisionPoly": {
+							"points": [
+								0.08620689655172414,
+								0.0641025641025641,
+								0.9630541871921182,
+								0.13141025641025642,
+								0.9150246305418719,
+								0.9358974358974359,
+								0.038177339901477834,
+								0.8685897435897436
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 999,
+						"height": 1012,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7541944,
+						"collisionPoly": {
+							"points": [
+								0.01218836565096953,
+								0.018433179723502304,
+								0.9939058171745152,
+								0.03686635944700461,
+								0.9883656509695291,
+								0.9861751152073732,
+								0.006648199445983379,
+								0.967741935483871
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 506280415339329,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

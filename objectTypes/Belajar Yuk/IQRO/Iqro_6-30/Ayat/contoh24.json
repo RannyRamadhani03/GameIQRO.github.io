@@ -1,0 +1,87 @@
+{
+	"name": "contoh24",
+	"plugin-id": "Sprite",
+	"sid": 603577001026240,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1925,
+						"height": 729,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5161036,
+						"collisionPoly": {
+							"points": [
+								0.2813852813852814,
+								0.02857142857142857,
+								0.9372294372294372,
+								0.19428571428571428,
+								0.922077922077922,
+								0.7371428571428571,
+								0.7575757575757576,
+								0.9371428571428572,
+								0.3225108225108225,
+								0.9142857142857143,
+								0.07792207792207792,
+								0.8342857142857143,
+								0.04112554112554113,
+								0.7314285714285714
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 462,
+						"height": 175,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4685465,
+						"collisionPoly": {
+							"points": [
+								0.2813852813852814,
+								0.02857142857142857,
+								0.9372294372294372,
+								0.19428571428571428,
+								0.922077922077922,
+								0.7371428571428571,
+								0.7575757575757576,
+								0.9371428571428572,
+								0.3225108225108225,
+								0.9142857142857143,
+								0.07792207792207792,
+								0.8342857142857143,
+								0.04112554112554113,
+								0.7314285714285714
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 921027434929562,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

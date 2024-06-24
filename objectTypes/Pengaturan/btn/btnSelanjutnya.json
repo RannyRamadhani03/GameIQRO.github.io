@@ -1,0 +1,86 @@
+{
+	"name": "btnSelanjutnya",
+	"plugin-id": "Sprite",
+	"sid": 772955915495034,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "UkuranX",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 279162204417282
+		},
+		{
+			"name": "UkuranY",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 507786798146212
+		},
+		{
+			"name": "fathah1",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 492556696391283
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 453083887071190
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 635,
+						"height": 243,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7752062,
+						"collisionPoly": {
+							"points": [
+								0.07559055118110236,
+								0.06584362139917696,
+								0.9637795275590552,
+								0.13168724279835392,
+								0.9748031496062992,
+								0.19753086419753085,
+								0.9748031496062992,
+								0.8024691358024691,
+								0.9212598425196851,
+								0.934156378600823,
+								0.03464566929133858,
+								0.8600823045267489,
+								0.025196850393700787,
+								0.7983539094650206,
+								0.025196850393700787,
+								0.19753086419753085
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 509888479364176,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

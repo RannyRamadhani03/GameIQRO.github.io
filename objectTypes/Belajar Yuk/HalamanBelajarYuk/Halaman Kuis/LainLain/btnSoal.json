@@ -1,0 +1,50 @@
+{
+	"name": "btnSoal",
+	"plugin-id": "Sprite",
+	"sid": 551476628990188,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 810,
+						"height": 310,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6894226,
+						"collisionPoly": {
+							"points": [
+								0.08518518518518518,
+								0.06451612903225806,
+								0.9629629629629629,
+								0.13225806451612904,
+								0.9197530864197531,
+								0.9354838709677419,
+								0.04691358024691358,
+								0.896774193548387
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 667931132541295,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,50 @@
+{
+	"name": "menuPetunjuk",
+	"plugin-id": "Sprite",
+	"sid": 220218484787505,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1920,
+						"height": 1080,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2231685,
+						"collisionPoly": {
+							"points": [
+								0.0007596859964547987,
+								0,
+								0.9972144846796658,
+								0.00043878894251864854,
+								0.9967080273486959,
+								0.9995612110574813,
+								0.0002532286654849329,
+								0.998683633172444
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 550429391534627,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

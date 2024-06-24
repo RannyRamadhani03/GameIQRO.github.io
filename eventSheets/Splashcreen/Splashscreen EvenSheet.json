@@ -1,0 +1,52 @@
+{
+	"name": "Splashscreen EvenSheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 177349170126444
+				}
+			],
+			"actions": [
+				{
+					"id": "set-width",
+					"objectClass": "bgload",
+					"sid": 551873663532248,
+					"parameters": {
+						"width": "bgload.Width +4"
+					}
+				}
+			],
+			"sid": 331456496453491
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-width",
+					"objectClass": "bgload",
+					"sid": 893133647353567,
+					"parameters": {
+						"comparison": 0,
+						"width": "800"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 549515105333078,
+					"parameters": {
+						"layout": "HalamanMenu"
+					}
+				}
+			],
+			"sid": 601976747760237
+		}
+	],
+	"sid": 519833092814131
+}

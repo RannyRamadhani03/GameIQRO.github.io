@@ -1,0 +1,1298 @@
+{
+	"name": "_DoaHarian1",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "openingSheet"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "speedBG"
+		},
+		{
+			"eventType": "variable",
+			"name": "DoaHarian1",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 761473829311929
+		},
+		{
+			"eventType": "variable",
+			"name": "DoaHarian2",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 258713335629269
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "OnStartLayout DOAHARIAN1",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 816503839903441
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnDoa1",
+							"sid": 864886160431074,
+							"parameters": {
+								"instance-variable": "UkuranX",
+								"value": "Self.Width"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnDoa1",
+							"sid": 653884282409867,
+							"parameters": {
+								"instance-variable": "UkuranY",
+								"value": "Self.Height"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnKembali",
+							"sid": 431374139195267,
+							"parameters": {
+								"instance-variable": "UkuranX",
+								"value": "Self.Width"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnKembali",
+							"sid": 487118633446273,
+							"parameters": {
+								"instance-variable": "UkuranY",
+								"value": "Self.Height"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnDoa2",
+							"sid": 203343557681728,
+							"parameters": {
+								"instance-variable": "UkuranX",
+								"value": "Self.Width"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnDoa2",
+							"sid": 148789737513167,
+							"parameters": {
+								"instance-variable": "UkuranY",
+								"value": "Self.Height"
+							}
+						}
+					],
+					"sid": 162165245854840
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 699380338561744,
+							"parameters": {
+								"object": "btnKembali"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 122275909887024,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-any-touch-end",
+									"objectClass": "Touch",
+									"sid": 904369830825366
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 213878897616639,
+									"parameters": {
+										"layout": "HalamanMenu"
+									}
+								}
+							],
+							"sid": 796145834154836
+						}
+					]
+				}
+			],
+			"sid": 886214264034263
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "SizeLayout DOAHARIAN1",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 187816323481563,
+							"parameters": {
+								"object": "btnDoa1",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 630733239113104,
+							"parameters": {
+								"tag": "\"opening\""
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "btnDoa1",
+							"sid": 752630486866552,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "Self.UkuranX+50",
+								"end-y": "Self.UkuranY+50",
+								"time": "0.2",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 327377813227354,
+							"parameters": {
+								"seconds": "0.2"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "btnDoa1",
+							"sid": 899389256310623,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "Self.UkuranX",
+								"end-y": "Self.UkuranY",
+								"time": "0.2",
+								"ease": "easeinback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						}
+					],
+					"sid": 192766559462833
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 471253796660910,
+							"parameters": {
+								"object": "btnKembali",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-two-properties",
+							"objectClass": "btnKembali",
+							"sid": 535375434798876,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "Self.UkuranX+30",
+								"end-y": "Self.UkuranY+30",
+								"time": "0.2",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 470283474538191,
+							"parameters": {
+								"seconds": "0.2"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "btnKembali",
+							"sid": 680784303362163,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "Self.UkuranX",
+								"end-y": "Self.UkuranY",
+								"time": "0.2",
+								"ease": "easeinback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						}
+					],
+					"sid": 597309810086040
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 839186594490494,
+							"parameters": {
+								"object": "btnSelanjutnya",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-two-properties",
+							"objectClass": "btnSelanjutnya",
+							"sid": 249073063898794,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "Self.UkuranX+30",
+								"end-y": "Self.UkuranY+30",
+								"time": "0.2",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 509875243980844,
+							"parameters": {
+								"seconds": "0.2"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "btnSelanjutnya",
+							"sid": 589527126430248,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "Self.UkuranX",
+								"end-y": "Self.UkuranY",
+								"time": "0.2",
+								"ease": "easeinback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						}
+					],
+					"sid": 480263034326440
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 611199184388230,
+							"parameters": {
+								"object": "btnKembali",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-two-properties",
+							"objectClass": "btnKembali",
+							"sid": 968503794473005,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "Self.UkuranX+30",
+								"end-y": "Self.UkuranY+30",
+								"time": "0.2",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 603247370528838,
+							"parameters": {
+								"seconds": "0.2"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "btnKembali",
+							"sid": 812445896851869,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "Self.UkuranX",
+								"end-y": "Self.UkuranY",
+								"time": "0.2",
+								"ease": "easeinback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						}
+					],
+					"sid": 327135100372864
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 192235231011776,
+							"parameters": {
+								"object": "btnDoa2",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 321474021088481,
+							"parameters": {
+								"tag": "\"opening\""
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "btnDoa2",
+							"sid": 558439025401144,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "Self.UkuranX+30",
+								"end-y": "Self.UkuranY+30",
+								"time": "0.2",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 637298845921940,
+							"parameters": {
+								"seconds": "0.2"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "btnDoa2",
+							"sid": 719920150381889,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "Self.UkuranX",
+								"end-y": "Self.UkuranY",
+								"time": "0.2",
+								"ease": "easeinback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						}
+					],
+					"sid": 361087922778890
+				}
+			],
+			"sid": 362774811293059
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "FunctionDoaHarian1",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"functionName": "DoaHarian1",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 322053082213998,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 841799329893936,
+									"parameters": {
+										"variable": "DoaHarian1",
+										"comparison": 0,
+										"value": "0"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "btnDoa1",
+									"sid": 812160441263423,
+									"parameters": {
+										"comparison": 0,
+										"number": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnDoa1",
+									"sid": 524526785465842,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 475514151902295,
+									"parameters": {
+										"seconds": "0.3"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnDoa1",
+									"sid": 526807983919317,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 591692682551321,
+									"parameters": {
+										"layout": "DoaMasukRumah"
+									}
+								}
+							],
+							"sid": 551744497024614
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 999387833957412,
+									"parameters": {
+										"variable": "DoaHarian1",
+										"comparison": 0,
+										"value": "1"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "btnDoa1",
+									"sid": 471744946680539,
+									"parameters": {
+										"comparison": 0,
+										"number": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnDoa1",
+									"sid": 436824960753552,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 903650321038448,
+									"parameters": {
+										"seconds": "0.3"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnDoa1",
+									"sid": 616215388751218,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 843325406964376,
+									"parameters": {
+										"layout": "DoaMasukMasjid"
+									}
+								}
+							],
+							"sid": 247983472818715
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 273695946468623,
+									"parameters": {
+										"variable": "DoaHarian1",
+										"comparison": 0,
+										"value": "2"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "btnDoa1",
+									"sid": 176776710694131,
+									"parameters": {
+										"comparison": 0,
+										"number": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnDoa1",
+									"sid": 749192000909550,
+									"parameters": {
+										"frame-number": "2"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 835396774566026,
+									"parameters": {
+										"seconds": "0.3"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnDoa1",
+									"sid": 838108194665715,
+									"parameters": {
+										"frame-number": "2"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 499157003541851,
+									"parameters": {
+										"layout": "DoaBangunTidur"
+									}
+								}
+							],
+							"sid": 103114385882941
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 224214365333826,
+									"parameters": {
+										"variable": "DoaHarian1",
+										"comparison": 0,
+										"value": "3"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "btnDoa1",
+									"sid": 735302822067683,
+									"parameters": {
+										"comparison": 0,
+										"number": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnDoa1",
+									"sid": 341282128008035,
+									"parameters": {
+										"frame-number": "3"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 201415554984248,
+									"parameters": {
+										"seconds": "0.3"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnDoa1",
+									"sid": 870720534822097,
+									"parameters": {
+										"frame-number": "3"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 413175386690687,
+									"parameters": {
+										"layout": "DoaSetelahMakan"
+									}
+								}
+							],
+							"sid": 766541532059909
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 833103530429950,
+									"parameters": {
+										"variable": "DoaHarian1",
+										"comparison": 0,
+										"value": "4"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "btnDoa1",
+									"sid": 702252102388263,
+									"parameters": {
+										"comparison": 0,
+										"number": "4"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnDoa1",
+									"sid": 673959575476988,
+									"parameters": {
+										"frame-number": "4"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 921361599572956,
+									"parameters": {
+										"seconds": "0.3"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnDoa1",
+									"sid": 679566291602402,
+									"parameters": {
+										"frame-number": "4"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 605983391845717,
+									"parameters": {
+										"layout": "DoaSesudahWudhu"
+									}
+								}
+							],
+							"sid": 310346455568697
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 571061507694380,
+									"parameters": {
+										"variable": "DoaHarian1",
+										"comparison": 0,
+										"value": "5"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "btnDoa1",
+									"sid": 322311012788409,
+									"parameters": {
+										"comparison": 0,
+										"number": "5"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnDoa1",
+									"sid": 157560600688870,
+									"parameters": {
+										"frame-number": "5"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 941620244720146,
+									"parameters": {
+										"seconds": "0.3"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnDoa1",
+									"sid": 550198492652865,
+									"parameters": {
+										"frame-number": "5"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 769661214513406,
+									"parameters": {
+										"layout": "DoaMelepasPakaian"
+									}
+								}
+							],
+							"sid": 727415655604343
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 665987051571541,
+							"parameters": {
+								"object": "btnDoa1",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 458739275910254,
+							"parameters": {
+								"variable": "DoaHarian1",
+								"value": "btnDoa1.AnimationFrame"
+							}
+						},
+						{
+							"callFunction": "DoaHarian1",
+							"sid": 891528966390729
+						}
+					],
+					"sid": 169717934341998
+				}
+			],
+			"sid": 548054672089562
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "FunctionDoaHarian2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"functionName": "DoaHarian2",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 675344067598334,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 945052885232217,
+									"parameters": {
+										"variable": "DoaHarian2",
+										"comparison": 0,
+										"value": "0"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "btnDoa2",
+									"sid": 210922186046945,
+									"parameters": {
+										"comparison": 0,
+										"number": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnDoa2",
+									"sid": 854652034929256,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 401079596762485,
+									"parameters": {
+										"seconds": "0.3"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnDoa2",
+									"sid": 956475023612550,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 621874735470138,
+									"parameters": {
+										"layout": "DoaKeluarRumah"
+									}
+								}
+							],
+							"sid": 542994888569984
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 730470637788938,
+									"parameters": {
+										"variable": "DoaHarian2",
+										"comparison": 0,
+										"value": "1"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "btnDoa2",
+									"sid": 835673905704816,
+									"parameters": {
+										"comparison": 0,
+										"number": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnDoa2",
+									"sid": 745977401655107,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 602965914576987,
+									"parameters": {
+										"seconds": "0.3"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnDoa2",
+									"sid": 546192815936288,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 970249617654873,
+									"parameters": {
+										"layout": "DoaKeluarMasjid"
+									}
+								}
+							],
+							"sid": 179238616281478
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 991999501391046,
+									"parameters": {
+										"variable": "DoaHarian2",
+										"comparison": 0,
+										"value": "2"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "btnDoa2",
+									"sid": 967351180180138,
+									"parameters": {
+										"comparison": 0,
+										"number": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnDoa2",
+									"sid": 960025286155953,
+									"parameters": {
+										"frame-number": "2"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 414001534908541,
+									"parameters": {
+										"seconds": "0.3"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnDoa2",
+									"sid": 530682105447108,
+									"parameters": {
+										"frame-number": "2"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 358677325912005,
+									"parameters": {
+										"layout": "DoaSebelumTidur"
+									}
+								}
+							],
+							"sid": 863564322347000
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 697728493815380,
+									"parameters": {
+										"variable": "DoaHarian2",
+										"comparison": 0,
+										"value": "3"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "btnDoa2",
+									"sid": 799937824837766,
+									"parameters": {
+										"comparison": 0,
+										"number": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnDoa2",
+									"sid": 208466781140537,
+									"parameters": {
+										"frame-number": "3"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 736027228789290,
+									"parameters": {
+										"seconds": "0.3"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnDoa2",
+									"sid": 533529514322826,
+									"parameters": {
+										"frame-number": "3"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 627794997128074,
+									"parameters": {
+										"layout": "DoaSebelumMakan"
+									}
+								}
+							],
+							"sid": 333485296907901
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 610454917368076,
+									"parameters": {
+										"variable": "DoaHarian2",
+										"comparison": 0,
+										"value": "4"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "btnDoa2",
+									"sid": 945875427051471,
+									"parameters": {
+										"comparison": 0,
+										"number": "4"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnDoa2",
+									"sid": 744632648070269,
+									"parameters": {
+										"frame-number": "4"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 213335846190401,
+									"parameters": {
+										"seconds": "0.3"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnDoa2",
+									"sid": 975546927584458,
+									"parameters": {
+										"frame-number": "4"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 657332630250787,
+									"parameters": {
+										"layout": "DoaSebelumWudhu"
+									}
+								}
+							],
+							"sid": 377426017715183
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 445752372792955,
+									"parameters": {
+										"variable": "DoaHarian2",
+										"comparison": 0,
+										"value": "5"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "btnDoa2",
+									"sid": 927506902589022,
+									"parameters": {
+										"comparison": 0,
+										"number": "5"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnDoa2",
+									"sid": 774489439791864,
+									"parameters": {
+										"frame-number": "5"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 902907128409610,
+									"parameters": {
+										"seconds": "0.3"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnDoa2",
+									"sid": 617268136833907,
+									"parameters": {
+										"frame-number": "5"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 830168162596289,
+									"parameters": {
+										"layout": "DoaMemakaiPakaian"
+									}
+								}
+							],
+							"sid": 730549872522776
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 763329750171690,
+							"parameters": {
+								"object": "btnDoa2",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 629716333817376,
+							"parameters": {
+								"variable": "DoaHarian2",
+								"value": "btnDoa2.AnimationFrame"
+							}
+						},
+						{
+							"callFunction": "DoaHarian2",
+							"sid": 949802324795030
+						}
+					],
+					"sid": 205753159644383
+				}
+			],
+			"sid": 374867707358832
+		}
+	],
+	"sid": 324504774029240
+}

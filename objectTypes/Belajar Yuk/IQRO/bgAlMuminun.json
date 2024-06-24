@@ -1,0 +1,50 @@
+{
+	"name": "bgAlMuminun",
+	"plugin-id": "Sprite",
+	"sid": 217818792632976,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1920,
+						"height": 1080,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8284560,
+						"collisionPoly": {
+							"points": [
+								0.00076103500761035,
+								0.00043840420868040335,
+								0.9997463216641299,
+								0.00131521262604121,
+								0.9992389649923896,
+								0.9995615957913196,
+								0.0002536783358701167,
+								0.9986847873739588
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 457943096137511,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

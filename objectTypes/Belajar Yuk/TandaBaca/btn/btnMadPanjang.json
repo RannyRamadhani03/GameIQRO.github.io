@@ -1,0 +1,96 @@
+{
+	"name": "btnMadPanjang",
+	"plugin-id": "Sprite",
+	"sid": 574425523157816,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "UkuranX",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 641659557285014
+		},
+		{
+			"name": "UkuranY",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 855276839793570
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 136056311431231
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 999,
+						"height": 1012,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5029434,
+						"collisionPoly": {
+							"points": [
+								0.011660188784008884,
+								0.0047169811320754715,
+								0.9927817878956136,
+								0.014150943396226415,
+								0.9888950583009439,
+								0.9952830188679245,
+								0.007773459189339256,
+								0.9858490566037735
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 999,
+						"height": 1012,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9574510,
+						"collisionPoly": {
+							"points": [
+								0.011660188784008884,
+								0.0047169811320754715,
+								0.9927817878956136,
+								0.014150943396226415,
+								0.9888950583009439,
+								0.9952830188679245,
+								0.007773459189339256,
+								0.9858490566037735
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 721490855599688,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

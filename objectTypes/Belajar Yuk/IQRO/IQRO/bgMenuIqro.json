@@ -1,0 +1,50 @@
+{
+	"name": "bgMenuIqro",
+	"plugin-id": "Sprite",
+	"sid": 869205484803017,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1920,
+						"height": 1080,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8574923,
+						"collisionPoly": {
+							"points": [
+								0.0002536783358701167,
+								0,
+								1,
+								0,
+								1,
+								0.9995577178239717,
+								0.0002536783358701167,
+								0.9995577178239717
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 751468863667860,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

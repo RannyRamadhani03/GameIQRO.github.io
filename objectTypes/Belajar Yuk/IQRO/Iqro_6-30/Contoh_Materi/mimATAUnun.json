@@ -1,0 +1,60 @@
+{
+	"name": "mimATAUnun",
+	"plugin-id": "Sprite",
+	"sid": 854610277886203,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 361,
+						"height": 278,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4150154,
+						"collisionPoly": {
+							"points": [
+								0.6371191135734072,
+								0.0035971223021582736,
+								0.6731301939058172,
+								0.025179856115107913,
+								0.96398891966759,
+								0.420863309352518,
+								1,
+								0.5467625899280576,
+								1,
+								0.7302158273381295,
+								0.9058171745152355,
+								0.8741007194244604,
+								0.027700831024930747,
+								0.9928057553956835,
+								0,
+								0.8597122302158273,
+								0.12742382271468145,
+								0.24100719424460432
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 662287697294670,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"name": "FamilyBG",
+	"plugin-id": "TiledBg",
+	"sid": 584053953574435,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"bg3",
+		"bg4"
+	]
+}

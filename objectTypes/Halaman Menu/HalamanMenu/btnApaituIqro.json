@@ -1,0 +1,79 @@
+{
+	"name": "btnApaituIqro",
+	"plugin-id": "Sprite",
+	"sid": 148572201263679,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "UkuranX",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 147353724459589
+		},
+		{
+			"name": "UkuranY",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 832959582277692
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 391811992038751
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 560,
+						"height": 600,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 911912,
+						"collisionPoly": {
+							"points": [
+								0.14220416455053325,
+								0.06305418719211822,
+								0.8583037074657186,
+								0.06305418719211822,
+								0.9349923819197562,
+								0.13497536945812807,
+								0.9238191975622143,
+								0.8975369458128079,
+								0.8623666835957339,
+								0.9364532019704433,
+								0.06500761808024377,
+								0.8625615763546798,
+								0.06500761808024377,
+								0.13694581280788176,
+								0.09395632300660234,
+								0.08226600985221674
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 836305214816054,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

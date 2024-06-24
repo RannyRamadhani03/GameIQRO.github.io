@@ -1,0 +1,4579 @@
+{
+	"name": "_MenuTandaBaca",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "MenuTandaBaca",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 852072376957583
+		},
+		{
+			"eventType": "variable",
+			"name": "Bukafathah",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 603252474344168
+		},
+		{
+			"eventType": "variable",
+			"name": "suara",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 291964568773453
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "speedBG"
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "OnStartLayoutMenuTandaBaca",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 173357960881650
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnKembali",
+							"sid": 604898603632820,
+							"parameters": {
+								"instance-variable": "UkuranX",
+								"value": "Self.Width"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnKembali",
+							"sid": 992560897802926,
+							"parameters": {
+								"instance-variable": "UkuranY",
+								"value": "Self.Height"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnKembali2",
+							"sid": 235577031486384,
+							"parameters": {
+								"instance-variable": "UkuranX",
+								"value": "Self.Width"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnKembali2",
+							"sid": 196494203902156,
+							"parameters": {
+								"instance-variable": "UkuranY",
+								"value": "Self.Height"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnSelanjutnya",
+							"sid": 563023747912793,
+							"parameters": {
+								"instance-variable": "UkuranX",
+								"value": "Self.Width"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnSelanjutnya",
+							"sid": 417983513741421,
+							"parameters": {
+								"instance-variable": "UkuranY",
+								"value": "Self.Height"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnFathah",
+							"sid": 496538704271610,
+							"parameters": {
+								"instance-variable": "UkuranX",
+								"value": "Self.Width"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnFathah",
+							"sid": 561812667200473,
+							"parameters": {
+								"instance-variable": "UkuranY",
+								"value": "Self.Height"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnKasrah",
+							"sid": 327387610561978,
+							"parameters": {
+								"instance-variable": "UkuranX",
+								"value": "Self.Width"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnKasrah",
+							"sid": 702713438941308,
+							"parameters": {
+								"instance-variable": "UkuranY",
+								"value": "Self.Height"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnDhommah",
+							"sid": 820121475439062,
+							"parameters": {
+								"instance-variable": "UkuranX",
+								"value": "Self.Width"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnDhommah",
+							"sid": 947032218596433,
+							"parameters": {
+								"instance-variable": "UkuranY",
+								"value": "Self.Height"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnSukun",
+							"sid": 923116740307988,
+							"parameters": {
+								"instance-variable": "UkuranX",
+								"value": "Self.Width"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnSukun",
+							"sid": 701786189216464,
+							"parameters": {
+								"instance-variable": "UkuranY",
+								"value": "Self.Height"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnTasydid",
+							"sid": 113952441050217,
+							"parameters": {
+								"instance-variable": "UkuranX",
+								"value": "Self.Width"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnTasydid",
+							"sid": 111876331265166,
+							"parameters": {
+								"instance-variable": "UkuranY",
+								"value": "Self.Height"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnTanwin",
+							"sid": 752797274803112,
+							"parameters": {
+								"instance-variable": "UkuranX",
+								"value": "Self.Width"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnTanwin",
+							"sid": 325176832424532,
+							"parameters": {
+								"instance-variable": "UkuranY",
+								"value": "Self.Height"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnMadAsli",
+							"sid": 411381103782744,
+							"parameters": {
+								"instance-variable": "UkuranX",
+								"value": "Self.Width"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnMadAsli",
+							"sid": 486869567192918,
+							"parameters": {
+								"instance-variable": "UkuranY",
+								"value": "Self.Height"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnMadPanjang",
+							"sid": 450018239382868,
+							"parameters": {
+								"instance-variable": "UkuranX",
+								"value": "Self.Width"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnMadPanjang",
+							"sid": 124777801391438,
+							"parameters": {
+								"instance-variable": "UkuranY",
+								"value": "Self.Height"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnWaqof",
+							"sid": 624833931859038,
+							"parameters": {
+								"instance-variable": "UkuranX",
+								"value": "Self.Width"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnWaqof",
+							"sid": 451013564434764,
+							"parameters": {
+								"instance-variable": "UkuranY",
+								"value": "Self.Height"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "BtnKuisTandaBaca",
+							"sid": 767402314687083,
+							"parameters": {
+								"instance-variable": "UkuranX",
+								"value": "Self.Width"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "BtnKuisTandaBaca",
+							"sid": 647987242523532,
+							"parameters": {
+								"instance-variable": "UkuranY",
+								"value": "Self.Height"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "AyatTandaBaca",
+							"sid": 558185149718165,
+							"parameters": {
+								"instance-variable": "UkuranA",
+								"value": "Self.Width"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "AyatTandaBaca",
+							"sid": 475553667397404,
+							"parameters": {
+								"instance-variable": "UkuranB",
+								"value": "Self.Height"
+							}
+						}
+					],
+					"sid": 111910974058939
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 225127522296565,
+							"parameters": {
+								"object": "btnKembali",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-two-properties",
+							"objectClass": "btnKembali",
+							"sid": 349704907470454,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "Self.UkuranX+50",
+								"end-y": "Self.UkuranY+50",
+								"time": "0.2",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 410938531025037,
+							"parameters": {
+								"seconds": "0.2"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "btnKembali",
+							"sid": 582376324886138,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "Self.UkuranX",
+								"end-y": "Self.UkuranY",
+								"time": "0.2",
+								"ease": "easeinback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						}
+					],
+					"sid": 594290239209019
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 442534234561829,
+							"parameters": {
+								"object": "BtnKuisTandaBaca",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 292090629264491
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "BtnKuisTandaBaca",
+							"sid": 802104329948252,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "Self.UkuranX+30",
+								"end-y": "Self.UkuranY+30",
+								"time": "0.2",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 940480286034408,
+							"parameters": {
+								"seconds": "0.2"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "BtnKuisTandaBaca",
+							"sid": 389091265411409,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "Self.UkuranX",
+								"end-y": "Self.UkuranY",
+								"time": "0.2",
+								"ease": "easeinback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						}
+					],
+					"sid": 132755349722851
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 669669486142770,
+							"parameters": {
+								"object": "BtnKuisIqro",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-all",
+							"objectClass": "Audio",
+							"sid": 562033538054374
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "BtnKuisIqro",
+							"sid": 513663700463533,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "Self.UkuranX+30",
+								"end-y": "Self.UkuranY+30",
+								"time": "0.2",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 989144630199772,
+							"parameters": {
+								"seconds": "0.2"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "BtnKuisIqro",
+							"sid": 265376256683106,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "Self.UkuranX",
+								"end-y": "Self.UkuranY",
+								"time": "0.2",
+								"ease": "easeinback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						}
+					],
+					"sid": 216354866373618
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 374161564175359,
+							"parameters": {
+								"object": "BtnKuisTandaBaca"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 256411484905468,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-any-touch-end",
+									"objectClass": "Touch",
+									"sid": 357604481551832
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 257926623192153,
+									"parameters": {
+										"layout": "TandaBaca_Awal"
+									}
+								}
+							],
+							"sid": 530087971745521
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 673596535448184,
+							"parameters": {
+								"object": "btnKembali"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 926883079661264,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-any-touch-end",
+									"objectClass": "Touch",
+									"sid": 302070736454345
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 239607834985718,
+									"parameters": {
+										"layout": "BelajarYuk"
+									}
+								}
+							],
+							"sid": 285541371475682
+						}
+					]
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "FrameTerbuka",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 517015014023557,
+									"parameters": {
+										"object": "btnFathah",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnFathah",
+									"sid": 935551350725292,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 903104599481112,
+									"parameters": {
+										"seconds": "0.3"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnFathah",
+									"sid": 563790930513510,
+									"parameters": {
+										"frame-number": "1"
+									}
+								}
+							],
+							"sid": 593971869039171,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "btnFathah",
+											"sid": 907473103510290,
+											"parameters": {
+												"instance-variable": "UkuranX",
+												"comparison": 3,
+												"value": "Bukafathah"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation-frame",
+											"objectClass": "btnFathah",
+											"sid": 839214509972504,
+											"parameters": {
+												"frame-number": "1"
+											}
+										}
+									],
+									"sid": 111598427193314
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 891015623537592,
+									"parameters": {
+										"object": "btnKasrah",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnKasrah",
+									"sid": 468270366937088,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 778387240130316,
+									"parameters": {
+										"seconds": "0.3"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnKasrah",
+									"sid": 372512299753194,
+									"parameters": {
+										"frame-number": "1"
+									}
+								}
+							],
+							"sid": 985308060002775,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "btnKasrah",
+											"sid": 762170351545678,
+											"parameters": {
+												"instance-variable": "UkuranX",
+												"comparison": 3,
+												"value": "Bukafathah"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation-frame",
+											"objectClass": "btnKasrah",
+											"sid": 598104283186074,
+											"parameters": {
+												"frame-number": "1"
+											}
+										}
+									],
+									"sid": 397048608756454
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 883983210472420,
+									"parameters": {
+										"object": "btnDhommah",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnDhommah",
+									"sid": 815941932291231,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 770040055825277,
+									"parameters": {
+										"seconds": "0.3"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnDhommah",
+									"sid": 534587135784260,
+									"parameters": {
+										"frame-number": "1"
+									}
+								}
+							],
+							"sid": 668573271660599,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "btnDhommah",
+											"sid": 656749347388473,
+											"parameters": {
+												"instance-variable": "UkuranX",
+												"comparison": 3,
+												"value": "Bukafathah"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation-frame",
+											"objectClass": "btnDhommah",
+											"sid": 403164368032682,
+											"parameters": {
+												"frame-number": "1"
+											}
+										}
+									],
+									"sid": 225691224780276
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 189567259495685,
+									"parameters": {
+										"object": "btnSukun",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnSukun",
+									"sid": 626293688572296,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 134655584666813,
+									"parameters": {
+										"seconds": "0.3"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnSukun",
+									"sid": 464089732998542,
+									"parameters": {
+										"frame-number": "1"
+									}
+								}
+							],
+							"sid": 470302104237948,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "btnSukun",
+											"sid": 525489804637194,
+											"parameters": {
+												"instance-variable": "UkuranX",
+												"comparison": 3,
+												"value": "Bukafathah"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation-frame",
+											"objectClass": "btnSukun",
+											"sid": 813260061814966,
+											"parameters": {
+												"frame-number": "1"
+											}
+										}
+									],
+									"sid": 559754755135764
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 802445169037293,
+									"parameters": {
+										"object": "btnTanwin",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnTanwin",
+									"sid": 427352738140371,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 472768012734359,
+									"parameters": {
+										"seconds": "0.3"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnTanwin",
+									"sid": 972279301460839,
+									"parameters": {
+										"frame-number": "1"
+									}
+								}
+							],
+							"sid": 569542330554060,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "btnTanwin",
+											"sid": 414240406722185,
+											"parameters": {
+												"instance-variable": "UkuranX",
+												"comparison": 3,
+												"value": "Bukafathah"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation-frame",
+											"objectClass": "btnTanwin",
+											"sid": 881902813593353,
+											"parameters": {
+												"frame-number": "1"
+											}
+										}
+									],
+									"sid": 734676218517837
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 431591647469852,
+									"parameters": {
+										"object": "btnMadAsli",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnMadAsli",
+									"sid": 945785951060056,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 329000040450941,
+									"parameters": {
+										"seconds": "0.3"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnMadAsli",
+									"sid": 710506073234171,
+									"parameters": {
+										"frame-number": "1"
+									}
+								}
+							],
+							"sid": 890099006901978,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "btnMadAsli",
+											"sid": 491576522143667,
+											"parameters": {
+												"instance-variable": "UkuranX",
+												"comparison": 3,
+												"value": "Bukafathah"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation-frame",
+											"objectClass": "btnMadAsli",
+											"sid": 840456599671486,
+											"parameters": {
+												"frame-number": "1"
+											}
+										}
+									],
+									"sid": 635108297733201
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 592033802822750,
+									"parameters": {
+										"object": "btnMadPanjang",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnMadPanjang",
+									"sid": 683504757057584,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 668981268660009,
+									"parameters": {
+										"seconds": "0.3"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnMadPanjang",
+									"sid": 202101332146411,
+									"parameters": {
+										"frame-number": "1"
+									}
+								}
+							],
+							"sid": 230813824374621,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "btnMadPanjang",
+											"sid": 641784489207906,
+											"parameters": {
+												"instance-variable": "UkuranX",
+												"comparison": 3,
+												"value": "Bukafathah"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation-frame",
+											"objectClass": "btnMadPanjang",
+											"sid": 173011497953283,
+											"parameters": {
+												"frame-number": "1"
+											}
+										}
+									],
+									"sid": 479065752141460
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 670403306679217,
+									"parameters": {
+										"object": "btnWaqof",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnWaqof",
+									"sid": 323094979268353,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 758093089851966,
+									"parameters": {
+										"seconds": "0.3"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnWaqof",
+									"sid": 908214167216288,
+									"parameters": {
+										"frame-number": "1"
+									}
+								}
+							],
+							"sid": 593884949865703,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "btnWaqof",
+											"sid": 965617618398701,
+											"parameters": {
+												"instance-variable": "UkuranX",
+												"comparison": 3,
+												"value": "Bukafathah"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation-frame",
+											"objectClass": "btnWaqof",
+											"sid": 297704055167622,
+											"parameters": {
+												"frame-number": "1"
+											}
+										}
+									],
+									"sid": 829038892068297
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 928864253656798,
+									"parameters": {
+										"object": "btnTasydid",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnTasydid",
+									"sid": 413962872890118,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 577770414187460,
+									"parameters": {
+										"seconds": "0.3"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "btnTasydid",
+									"sid": 832845886632585,
+									"parameters": {
+										"frame-number": "1"
+									}
+								}
+							],
+							"sid": 211618589887682,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "btnTasydid",
+											"sid": 771376469286412,
+											"parameters": {
+												"instance-variable": "UkuranX",
+												"comparison": 3,
+												"value": "Bukafathah"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation-frame",
+											"objectClass": "btnTasydid",
+											"sid": 173172597415238,
+											"parameters": {
+												"frame-number": "1"
+											}
+										}
+									],
+									"sid": 544686919088312
+								}
+							]
+						}
+					],
+					"sid": 296349931988690
+				}
+			],
+			"sid": 131308415483325
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "kembaliPOPUP",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "btnKembali",
+							"sid": 125853202378056,
+							"parameters": {
+								"object": "btnKembali"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 418715147551812,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 409671511249437,
+									"parameters": {
+										"first-value": "Bukafathah",
+										"comparison": 0,
+										"second-value": "btnKembali.fathah"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 158611520392129,
+									"parameters": {
+										"variable": "Bukafathah",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 725628220638408
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "btnKembali",
+							"sid": 261947888968509,
+							"parameters": {
+								"object": "btnSelanjutnya"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 954154631594957,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 323222461583402,
+									"parameters": {
+										"first-value": "Bukafathah",
+										"comparison": 0,
+										"second-value": "btnSelanjutnya.fathah1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 219130516875822,
+									"parameters": {
+										"variable": "Bukafathah",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 985990595049459
+						}
+					]
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "sizeBUTTON",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 219249370124332,
+									"parameters": {
+										"object": "btnFathah",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 490953097845031
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "btnFathah",
+									"sid": 638594032788422,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.UkuranX+50",
+										"end-y": "Self.UkuranY+50",
+										"time": "0.2",
+										"ease": "easeoutback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 133985296486235,
+									"parameters": {
+										"seconds": "0.2"
+									}
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "btnFathah",
+									"sid": 516909774709352,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.UkuranX",
+										"end-y": "Self.UkuranY",
+										"time": "0.2",
+										"ease": "easeinback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "bgFathah",
+									"sid": 335674711833840,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "LayoutHeight/2",
+										"time": "1",
+										"ease": "easeoutback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnKasrah",
+									"sid": 948743912998255,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnDhommah",
+									"sid": 367032527713656,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnSukun",
+									"sid": 200859848189511,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnTasydid",
+									"sid": 711016760342878,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnTanwin",
+									"sid": 942263967381663,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnMadAsli",
+									"sid": 613062970826548,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnMadPanjang",
+									"sid": 599090706303033,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnWaqof",
+									"sid": 667013123827473,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "BtnKuisTandaBaca",
+									"sid": 955973563926465,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnKembali",
+									"sid": 151295915203943,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								}
+							],
+							"sid": 165405568224323
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 429393071158929,
+									"parameters": {
+										"object": "btnKasrah",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 877077541852565
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "btnKasrah",
+									"sid": 876687761600857,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.UkuranX+50",
+										"end-y": "Self.UkuranY+50",
+										"time": "0.2",
+										"ease": "easeoutback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 214698985436545,
+									"parameters": {
+										"seconds": "0.2"
+									}
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "btnKasrah",
+									"sid": 561083724349575,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.UkuranX",
+										"end-y": "Self.UkuranY",
+										"time": "0.2",
+										"ease": "easeinback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "bgKasrah",
+									"sid": 177870526658472,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "LayoutHeight/2",
+										"time": "1",
+										"ease": "easeoutback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnFathah",
+									"sid": 115652241335263,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnDhommah",
+									"sid": 324092075620555,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnSukun",
+									"sid": 200673064899825,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnTasydid",
+									"sid": 243010092000917,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnTanwin",
+									"sid": 245147396881405,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnMadAsli",
+									"sid": 501307571539366,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnMadPanjang",
+									"sid": 978953286066424,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnWaqof",
+									"sid": 638281980240233,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "BtnKuisTandaBaca",
+									"sid": 437564798357652,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnKembali",
+									"sid": 208814068895358,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								}
+							],
+							"sid": 369471192348497
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 876668323041778,
+									"parameters": {
+										"object": "btnDhommah",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 612462870473875
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "btnDhommah",
+									"sid": 894319979782839,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.UkuranX+50",
+										"end-y": "Self.UkuranY+50",
+										"time": "0.2",
+										"ease": "easeoutback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 939733153835468,
+									"parameters": {
+										"seconds": "0.2"
+									}
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "btnDhommah",
+									"sid": 667312793827622,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.UkuranX",
+										"end-y": "Self.UkuranY",
+										"time": "0.2",
+										"ease": "easeinback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "bgDhommah",
+									"sid": 183955701558566,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "LayoutHeight/2",
+										"time": "1",
+										"ease": "easeoutback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnKasrah",
+									"sid": 966156959764639,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnFathah",
+									"sid": 274564394375372,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnSukun",
+									"sid": 910796053865571,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnTasydid",
+									"sid": 313096252116076,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnTanwin",
+									"sid": 796710581216748,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnMadAsli",
+									"sid": 770842179044214,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnMadPanjang",
+									"sid": 561278030130351,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnWaqof",
+									"sid": 419449521656846,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "BtnKuisTandaBaca",
+									"sid": 283748201252271,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnKembali",
+									"sid": 562942903267211,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								}
+							],
+							"sid": 455878861677979
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 810101264363163,
+									"parameters": {
+										"object": "btnSukun",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 982632384196860
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "btnSukun",
+									"sid": 160463271194318,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.UkuranX+50",
+										"end-y": "Self.UkuranY+50",
+										"time": "0.2",
+										"ease": "easeoutback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 915460953631388,
+									"parameters": {
+										"seconds": "0.2"
+									}
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "btnSukun",
+									"sid": 123865863883568,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.UkuranX",
+										"end-y": "Self.UkuranY",
+										"time": "0.2",
+										"ease": "easeinback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "bgSukun",
+									"sid": 244449178223327,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "LayoutHeight/2",
+										"time": "1",
+										"ease": "easeoutback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnKasrah",
+									"sid": 452926924580251,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnDhommah",
+									"sid": 800214885179609,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnFathah",
+									"sid": 583192318220968,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnTasydid",
+									"sid": 523637550407361,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnTanwin",
+									"sid": 834666499460417,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnMadAsli",
+									"sid": 144437451713213,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnMadPanjang",
+									"sid": 400045343517323,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnWaqof",
+									"sid": 908859614751801,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "BtnKuisTandaBaca",
+									"sid": 684046199816981,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnKembali",
+									"sid": 853733369436959,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								}
+							],
+							"sid": 674306953770853
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 590122060012200,
+									"parameters": {
+										"object": "btnTanwin",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 545933016094834
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "btnTanwin",
+									"sid": 381489058655010,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.UkuranX+50",
+										"end-y": "Self.UkuranY+50",
+										"time": "0.2",
+										"ease": "easeoutback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 503471175429243,
+									"parameters": {
+										"seconds": "0.2"
+									}
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "btnTanwin",
+									"sid": 530787186620249,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.UkuranX",
+										"end-y": "Self.UkuranY",
+										"time": "0.2",
+										"ease": "easeinback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "bgTanwin",
+									"sid": 456066116879928,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "LayoutHeight/2",
+										"time": "1",
+										"ease": "easeoutback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnKasrah",
+									"sid": 879027543837981,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnDhommah",
+									"sid": 839336059651363,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnSukun",
+									"sid": 171240577951413,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnTasydid",
+									"sid": 289696806486938,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnFathah",
+									"sid": 495825354015674,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnMadAsli",
+									"sid": 821152253615672,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnMadPanjang",
+									"sid": 679179991500822,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnWaqof",
+									"sid": 739265834029787,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "BtnKuisTandaBaca",
+									"sid": 328448806731423,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnKembali",
+									"sid": 290004750685044,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								}
+							],
+							"sid": 497786564252545
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 181438009838676,
+									"parameters": {
+										"object": "btnMadAsli",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 981118676503529
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "btnMadAsli",
+									"sid": 971423026497895,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.UkuranX+50",
+										"end-y": "Self.UkuranY+50",
+										"time": "0.2",
+										"ease": "easeoutback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 946372395422411,
+									"parameters": {
+										"seconds": "0.2"
+									}
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "btnMadAsli",
+									"sid": 803390507027679,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.UkuranX",
+										"end-y": "Self.UkuranY",
+										"time": "0.2",
+										"ease": "easeinback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "bgMadAsli",
+									"sid": 667202182492574,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "LayoutHeight/2",
+										"time": "1",
+										"ease": "easeoutback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnKasrah",
+									"sid": 422492173881306,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnDhommah",
+									"sid": 982717371525024,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnSukun",
+									"sid": 407095861735727,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnTasydid",
+									"sid": 544131121075380,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnTanwin",
+									"sid": 893000607933091,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnFathah",
+									"sid": 184900825118389,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnMadPanjang",
+									"sid": 332168300422100,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnWaqof",
+									"sid": 472214442409989,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "BtnKuisTandaBaca",
+									"sid": 261856496361282,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnKembali",
+									"sid": 464104124513389,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								}
+							],
+							"sid": 668365525141506
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 364046242263412,
+									"parameters": {
+										"object": "btnMadPanjang",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 990216992801673
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "btnMadPanjang",
+									"sid": 412242785081516,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.UkuranX+50",
+										"end-y": "Self.UkuranY+50",
+										"time": "0.2",
+										"ease": "easeoutback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 494986055146416,
+									"parameters": {
+										"seconds": "0.2"
+									}
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "btnMadPanjang",
+									"sid": 488327408273079,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.UkuranX",
+										"end-y": "Self.UkuranY",
+										"time": "0.2",
+										"ease": "easeinback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "bgMadPanjang",
+									"sid": 407856294508890,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "LayoutHeight/2",
+										"time": "1",
+										"ease": "easeoutback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnKasrah",
+									"sid": 841422047787193,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnDhommah",
+									"sid": 311418139864006,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnSukun",
+									"sid": 901649734490565,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnTasydid",
+									"sid": 297599489910612,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnTanwin",
+									"sid": 651552083120146,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnMadAsli",
+									"sid": 272876406893369,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnFathah",
+									"sid": 400843368085796,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnWaqof",
+									"sid": 126099828641058,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "BtnKuisTandaBaca",
+									"sid": 768742788518118,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnKembali",
+									"sid": 722280431935902,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								}
+							],
+							"sid": 572562297260422
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 535462132677128,
+									"parameters": {
+										"object": "btnWaqof",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 618859942454903
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "btnWaqof",
+									"sid": 742537442522589,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.UkuranX+50",
+										"end-y": "Self.UkuranY+50",
+										"time": "0.2",
+										"ease": "easeoutback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 284015556344669,
+									"parameters": {
+										"seconds": "0.2"
+									}
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "btnWaqof",
+									"sid": 770980308897260,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.UkuranX",
+										"end-y": "Self.UkuranY",
+										"time": "0.2",
+										"ease": "easeinback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "bgWaqof",
+									"sid": 280237277786533,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "LayoutHeight/2",
+										"time": "1",
+										"ease": "easeoutback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnKasrah",
+									"sid": 908606185999314,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnDhommah",
+									"sid": 322628200238145,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnSukun",
+									"sid": 628366483159653,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnTasydid",
+									"sid": 496799944010103,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnTanwin",
+									"sid": 575591836509241,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnMadAsli",
+									"sid": 679729541418530,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnMadPanjang",
+									"sid": 724509846707799,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnFathah",
+									"sid": 330863640561024,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "BtnKuisTandaBaca",
+									"sid": 703530265243278,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnKembali",
+									"sid": 167965110812123,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								}
+							],
+							"sid": 842228029659802
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 723489765443310,
+									"parameters": {
+										"object": "btnTasydid",
+										"type": "start"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 770804863210277
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "btnTasydid",
+									"sid": 195327651266811,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.UkuranX+50",
+										"end-y": "Self.UkuranY+50",
+										"time": "0.2",
+										"ease": "easeoutback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 817103248866057,
+									"parameters": {
+										"seconds": "0.2"
+									}
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "btnTasydid",
+									"sid": 481382099997997,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.UkuranX",
+										"end-y": "Self.UkuranY",
+										"time": "0.2",
+										"ease": "easeinback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "bgTasydid",
+									"sid": 947783771636222,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "LayoutHeight/2",
+										"time": "1",
+										"ease": "easeoutback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnKasrah",
+									"sid": 622466969871026,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnDhommah",
+									"sid": 540053610027493,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnSukun",
+									"sid": 709200033679163,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnFathah",
+									"sid": 384435737067192,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnTanwin",
+									"sid": 775858694822323,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnMadAsli",
+									"sid": 283588587934280,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnMadPanjang",
+									"sid": 845838449155868,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnWaqof",
+									"sid": 909410946869148,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "BtnKuisTandaBaca",
+									"sid": 152841148638061,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnKembali",
+									"sid": 326680260289128,
+									"parameters": {
+										"x": "3000",
+										"y": "3000"
+									}
+								}
+							],
+							"sid": 715650135900373
+						}
+					],
+					"sid": 591577763745418
+				}
+			],
+			"sid": 397943040755923
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "btnKembaliPOPUP",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 885165077127210,
+							"parameters": {
+								"object": "btnKembali2",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 208533624775620,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "btnKembali2",
+									"sid": 119223764085033,
+									"parameters": {
+										"comparison": 0,
+										"number": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "tween-two-properties",
+									"objectClass": "btnKembali2",
+									"sid": 182866110357895,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.UkuranX+50",
+										"end-y": "Self.UkuranY+50",
+										"time": "0.2",
+										"ease": "easeoutback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 645402284729764,
+									"parameters": {
+										"seconds": "0.2"
+									}
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "btnKembali2",
+									"sid": 814978993697652,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.UkuranX",
+										"end-y": "Self.UkuranY",
+										"time": "0.2",
+										"ease": "easeinback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 215785776193750
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "bgFathah",
+									"sid": 898695851156438,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "-1500",
+										"time": "1",
+										"ease": "easeinback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "bgKasrah",
+									"sid": 392007613160294,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "-1500",
+										"time": "1",
+										"ease": "easeinback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "bgDhommah",
+									"sid": 462319731998986,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "-1500",
+										"time": "1",
+										"ease": "easeinback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "bgSukun",
+									"sid": 102539125353598,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "-1500",
+										"time": "1",
+										"ease": "easeinback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "bgTasydid",
+									"sid": 325819515395830,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "-1500",
+										"time": "1",
+										"ease": "easeinback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "bgTanwin",
+									"sid": 659503496977560,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "-1500",
+										"time": "1",
+										"ease": "easeinback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "bgMadAsli",
+									"sid": 471483085424209,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "-1500",
+										"time": "1",
+										"ease": "easeinback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "bgMadPanjang",
+									"sid": 296100566479854,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "-1500",
+										"time": "1",
+										"ease": "easeinback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "bgWaqof",
+									"sid": 762917740910151,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "offsetY",
+										"end-value": "-1500",
+										"time": "1",
+										"ease": "easeinback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnFathah",
+									"sid": 423926699230389,
+									"parameters": {
+										"x": "480.5",
+										"y": " 560"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnKasrah",
+									"sid": 214189782262346,
+									"parameters": {
+										"x": "1213",
+										"y": "560"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnDhommah",
+									"sid": 929667162506913,
+									"parameters": {
+										"x": "1942",
+										"y": "560"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnSukun",
+									"sid": 169843933515439,
+									"parameters": {
+										"x": "2689",
+										"y": " 560"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnTasydid",
+									"sid": 755140953000973,
+									"parameters": {
+										"x": "480.5",
+										"y": "1321"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnTanwin",
+									"sid": 248225203880751,
+									"parameters": {
+										"x": "1213",
+										"y": "1321"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnMadAsli",
+									"sid": 907385322278470,
+									"parameters": {
+										"x": "1942",
+										"y": "1321"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnMadPanjang",
+									"sid": 739588829307123,
+									"parameters": {
+										"x": "2689",
+										"y": "1321"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnWaqof",
+									"sid": 618980686195162,
+									"parameters": {
+										"x": "3407",
+										"y": "560"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "BtnKuisTandaBaca",
+									"sid": 683429264606509,
+									"parameters": {
+										"x": "3394",
+										"y": "1313"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "btnKembali",
+									"sid": 275148552151402,
+									"parameters": {
+										"x": "3255",
+										"y": "1765"
+									}
+								}
+							],
+							"sid": 541195634843759
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "btnKembali2",
+									"sid": 755302481639314,
+									"parameters": {
+										"comparison": 0,
+										"number": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "tween-two-properties",
+									"objectClass": "btnKembali2",
+									"sid": 154288804543430,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.UkuranX+50",
+										"end-y": "Self.UkuranY+50",
+										"time": "0.2",
+										"ease": "easeoutback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 281093530435892,
+									"parameters": {
+										"seconds": "0.2"
+									}
+								},
+								{
+									"id": "tween-two-properties",
+									"objectClass": "btnKembali2",
+									"sid": 177290890907616,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"\"",
+										"property": "size",
+										"end-x": "Self.UkuranX",
+										"end-y": "Self.UkuranY",
+										"time": "0.2",
+										"ease": "easeinback",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 284066389680454,
+									"parameters": {
+										"layout": "MenuTandaBaca"
+									}
+								},
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 116331062268279
+								}
+							],
+							"sid": 758652489355222
+						}
+					]
+				}
+			],
+			"sid": 822442941036133
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Suara",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"functionName": "suara",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 208422584910382,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 698195391348809,
+									"parameters": {
+										"variable": "suara",
+										"comparison": 0,
+										"value": "0"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 339585945603795,
+									"parameters": {
+										"comparison": 0,
+										"number": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 783300539398734
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 315289427246415,
+									"parameters": {
+										"audio-file": "fathah",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 518861688661204,
+									"parameters": {
+										"frame-number": "18"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 627089340786457,
+									"parameters": {
+										"seconds": "0.3"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 582304086071580,
+									"parameters": {
+										"frame-number": "0"
+									}
+								}
+							],
+							"sid": 250608092801995
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 785574167309284,
+									"parameters": {
+										"variable": "suara",
+										"comparison": 0,
+										"value": "1"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 261156750889544,
+									"parameters": {
+										"comparison": 0,
+										"number": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 943382208412465
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 599580777468590,
+									"parameters": {
+										"audio-file": "Kasrah",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 793291475211501,
+									"parameters": {
+										"frame-number": "19"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 646331561043417,
+									"parameters": {
+										"seconds": "0.3"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 136920329423097,
+									"parameters": {
+										"frame-number": "1"
+									}
+								}
+							],
+							"sid": 648081492180288
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 254895105192161,
+									"parameters": {
+										"variable": "suara",
+										"comparison": 0,
+										"value": "2"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 132618363238078,
+									"parameters": {
+										"comparison": 0,
+										"number": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 274456670279266
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 636976363274553,
+									"parameters": {
+										"audio-file": "Dhommah",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 242921270600212,
+									"parameters": {
+										"frame-number": "20"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 626631640999604,
+									"parameters": {
+										"seconds": "0.3"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 825501394336683,
+									"parameters": {
+										"frame-number": "2"
+									}
+								}
+							],
+							"sid": 929476749036390
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 601721013685310,
+									"parameters": {
+										"variable": "suara",
+										"comparison": 0,
+										"value": "3"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 836756092735054,
+									"parameters": {
+										"comparison": 0,
+										"number": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 544780197521402
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 526218232820794,
+									"parameters": {
+										"audio-file": "Sukun",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 461266434908309,
+									"parameters": {
+										"frame-number": "21"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 357553371461133,
+									"parameters": {
+										"seconds": "0.3"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 894224347542929,
+									"parameters": {
+										"frame-number": "3"
+									}
+								}
+							],
+							"sid": 355901645685409
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 158942675779104,
+									"parameters": {
+										"variable": "suara",
+										"comparison": 0,
+										"value": "4"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 671860787676771,
+									"parameters": {
+										"comparison": 0,
+										"number": "4"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 624031929824129
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 383289654894395,
+									"parameters": {
+										"audio-file": "Tasdyd",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 724108760629793,
+									"parameters": {
+										"frame-number": "22"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 164440715323706,
+									"parameters": {
+										"seconds": "0.3"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 145601844987742,
+									"parameters": {
+										"frame-number": "4"
+									}
+								}
+							],
+							"sid": 385121171086409
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 578803893236244,
+									"parameters": {
+										"variable": "suara",
+										"comparison": 0,
+										"value": "5"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 988327986925478,
+									"parameters": {
+										"comparison": 0,
+										"number": "5"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 887256358981507
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 458048973605611,
+									"parameters": {
+										"audio-file": "Tanwin1",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 958703088274916,
+									"parameters": {
+										"frame-number": "23"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 323624636851916,
+									"parameters": {
+										"seconds": "0.3"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 768301108305597,
+									"parameters": {
+										"frame-number": "5"
+									}
+								}
+							],
+							"sid": 444468936942812
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 832044146820951,
+									"parameters": {
+										"variable": "suara",
+										"comparison": 0,
+										"value": "6"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 933538594761057,
+									"parameters": {
+										"comparison": 0,
+										"number": "6"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 212266568524096
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 205060420148009,
+									"parameters": {
+										"audio-file": "Tanwin2",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 933717401203955,
+									"parameters": {
+										"frame-number": "24"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 792513862445460,
+									"parameters": {
+										"seconds": "0.3"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 507745312453443,
+									"parameters": {
+										"frame-number": "6"
+									}
+								}
+							],
+							"sid": 358128049507587
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 167539768493057,
+									"parameters": {
+										"variable": "suara",
+										"comparison": 0,
+										"value": "7"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 650571366820595,
+									"parameters": {
+										"comparison": 0,
+										"number": "7"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 319678126102215
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 615009392324761,
+									"parameters": {
+										"audio-file": "Tanwin3",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 253058234722219,
+									"parameters": {
+										"frame-number": "25"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 826966314164627,
+									"parameters": {
+										"seconds": "0.3"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 670180822565087,
+									"parameters": {
+										"frame-number": "7"
+									}
+								}
+							],
+							"sid": 479415866603838
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 301871984238296,
+									"parameters": {
+										"variable": "suara",
+										"comparison": 0,
+										"value": "8"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 642123503821955,
+									"parameters": {
+										"comparison": 0,
+										"number": "8"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 597989157960360
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 880987285189127,
+									"parameters": {
+										"audio-file": "MadAsli1",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 775342816435037,
+									"parameters": {
+										"frame-number": "26"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 932364605405804,
+									"parameters": {
+										"seconds": "0.3"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 363923879653103,
+									"parameters": {
+										"frame-number": "8"
+									}
+								}
+							],
+							"sid": 193927761865890
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 399407224505621,
+									"parameters": {
+										"variable": "suara",
+										"comparison": 0,
+										"value": "9"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 145561069807827,
+									"parameters": {
+										"comparison": 0,
+										"number": "9"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 731110682952928
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 229005336004345,
+									"parameters": {
+										"audio-file": "MadAsli2",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 395460602773614,
+									"parameters": {
+										"frame-number": "27"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 898944233921882,
+									"parameters": {
+										"seconds": "0.3"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 130349170058240,
+									"parameters": {
+										"frame-number": "9"
+									}
+								}
+							],
+							"sid": 713766861030426
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 192013049521572,
+									"parameters": {
+										"variable": "suara",
+										"comparison": 0,
+										"value": "10"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 398627389614637,
+									"parameters": {
+										"comparison": 0,
+										"number": "10"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 424478089506466
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 133315494632797,
+									"parameters": {
+										"audio-file": "MadAsli3",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 321347293277228,
+									"parameters": {
+										"frame-number": "28"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 492682185248658,
+									"parameters": {
+										"seconds": "0.3"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 436200944279492,
+									"parameters": {
+										"frame-number": "10"
+									}
+								}
+							],
+							"sid": 941007189219047
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 607030090696597,
+									"parameters": {
+										"variable": "suara",
+										"comparison": 0,
+										"value": "11"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 521109127693930,
+									"parameters": {
+										"comparison": 0,
+										"number": "11"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 317392467807983
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 125179663496890,
+									"parameters": {
+										"audio-file": "MadPanjang1",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 924016138802702,
+									"parameters": {
+										"frame-number": "29"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 214701130007641,
+									"parameters": {
+										"seconds": "0.3"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 456038861771691,
+									"parameters": {
+										"frame-number": "11"
+									}
+								}
+							],
+							"sid": 205876922689300
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 548061126626757,
+									"parameters": {
+										"variable": "suara",
+										"comparison": 0,
+										"value": "12"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 114428854104467,
+									"parameters": {
+										"comparison": 0,
+										"number": "12"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 405312171187643
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 374979648048737,
+									"parameters": {
+										"audio-file": "MadPanjang2",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 781494505042858,
+									"parameters": {
+										"frame-number": "30"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 900545365654171,
+									"parameters": {
+										"seconds": "0.3"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 647711816876913,
+									"parameters": {
+										"frame-number": "12"
+									}
+								}
+							],
+							"sid": 413390738101034
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 884919935676543,
+									"parameters": {
+										"variable": "suara",
+										"comparison": 0,
+										"value": "13"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 195323802899038,
+									"parameters": {
+										"comparison": 0,
+										"number": "13"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 135525764971423
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 110300726032417,
+									"parameters": {
+										"audio-file": "MadPanjang3",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 249196092159731,
+									"parameters": {
+										"frame-number": "31"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 942387219417817,
+									"parameters": {
+										"seconds": "0.3"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 228697037357164,
+									"parameters": {
+										"frame-number": "13"
+									}
+								}
+							],
+							"sid": 740591287395691
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 138370033448870,
+									"parameters": {
+										"variable": "suara",
+										"comparison": 0,
+										"value": "14"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 943428327467699,
+									"parameters": {
+										"comparison": 0,
+										"number": "14"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 576788720912288
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 302627138018625,
+									"parameters": {
+										"audio-file": "MadPanjang4",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 684077952097833,
+									"parameters": {
+										"frame-number": "32"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 117888313807896,
+									"parameters": {
+										"seconds": "0.3"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 624615885524939,
+									"parameters": {
+										"frame-number": "14"
+									}
+								}
+							],
+							"sid": 792468659074261
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 127332406146658,
+									"parameters": {
+										"variable": "suara",
+										"comparison": 0,
+										"value": "15"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 969046941607685,
+									"parameters": {
+										"comparison": 0,
+										"number": "15"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 130007883620165
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 857811363553383,
+									"parameters": {
+										"audio-file": "Waqof1",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 213963595567894,
+									"parameters": {
+										"frame-number": "33"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 978315952983761,
+									"parameters": {
+										"seconds": "0.3"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 384108596425935,
+									"parameters": {
+										"frame-number": "15"
+									}
+								}
+							],
+							"sid": 282100658720649
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 404694414662991,
+									"parameters": {
+										"variable": "suara",
+										"comparison": 0,
+										"value": "16"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 245094990739133,
+									"parameters": {
+										"comparison": 0,
+										"number": "16"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 405288884793113
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 390147587375078,
+									"parameters": {
+										"audio-file": "Waqof2",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 740655723328762,
+									"parameters": {
+										"frame-number": "34"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 847725525113412,
+									"parameters": {
+										"seconds": "0.3"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 512014651243392,
+									"parameters": {
+										"frame-number": "16"
+									}
+								}
+							],
+							"sid": 144141499594766
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 910698937468180,
+									"parameters": {
+										"variable": "suara",
+										"comparison": 0,
+										"value": "17"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 767779293081136,
+									"parameters": {
+										"comparison": 0,
+										"number": "17"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-all",
+									"objectClass": "Audio",
+									"sid": 877193905890432
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 220143732156339,
+									"parameters": {
+										"audio-file": "Waqof3",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 896602860411530,
+									"parameters": {
+										"frame-number": "35"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 303868038650181,
+									"parameters": {
+										"seconds": "0.3"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "AyatTandaBaca",
+									"sid": 750523167887023,
+									"parameters": {
+										"frame-number": "17"
+									}
+								}
+							],
+							"sid": 773579741807915
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 999739437604381,
+							"parameters": {
+								"object": "AyatTandaBaca",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 309953448471862,
+							"parameters": {
+								"variable": "suara",
+								"value": "AyatTandaBaca.AnimationFrame"
+							}
+						},
+						{
+							"callFunction": "suara",
+							"sid": 968562205489807
+						}
+					],
+					"sid": 863676409085107
+				}
+			],
+			"sid": 845599826970763
+		}
+	],
+	"sid": 481329500505376
+}

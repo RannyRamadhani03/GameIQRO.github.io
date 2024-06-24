@@ -1,0 +1,54 @@
+{
+	"name": "panah",
+	"plugin-id": "Sprite",
+	"sid": 269847715918503,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1312,
+						"height": 97,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7846356,
+						"collisionPoly": {
+							"points": [
+								0.06707317073170732,
+								0.010309278350515464,
+								1,
+								0.35051546391752575,
+								1,
+								0.6185567010309279,
+								0.06478658536585366,
+								1,
+								0,
+								0.6185567010309279,
+								0,
+								0.3917525773195876
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 761103022732609,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,89 @@
+{
+	"name": "btnPause",
+	"plugin-id": "Sprite",
+	"sid": 502907058820115,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "PauseX",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 621589601193859
+		},
+		{
+			"name": "PauseY",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 116863915793285
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 308912553658313
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 391,
+						"height": 391,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9117612,
+						"collisionPoly": {
+							"points": [
+								0.45524296675191817,
+								0.06905370843989769,
+								0.5447570332480819,
+								0.06905370843989769,
+								0.782608695652174,
+								0.17135549872122763,
+								0.8312020460358056,
+								0.21994884910485935,
+								0.9335038363171355,
+								0.4680306905370844,
+								0.9335038363171355,
+								0.5345268542199488,
+								0.8312020460358056,
+								0.782608695652174,
+								0.782608695652174,
+								0.8312020460358056,
+								0.5447570332480819,
+								0.9335038363171355,
+								0.45524296675191817,
+								0.9335038363171355,
+								0.06649616368286446,
+								0.5447570332480819,
+								0.06649616368286446,
+								0.4578005115089514,
+								0.09718670076726342,
+								0.3350383631713555
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 555365706795523,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

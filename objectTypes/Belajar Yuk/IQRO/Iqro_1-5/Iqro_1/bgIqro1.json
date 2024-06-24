@@ -1,0 +1,52 @@
+{
+	"name": "bgIqro1",
+	"plugin-id": "Sprite",
+	"sid": 269997234636778,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1920,
+						"height": 1080,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9187550,
+						"collisionPoly": {
+							"points": [
+								0.0002531004808909137,
+								0,
+								1,
+								0.0008841732979664014,
+								0.996962794229309,
+								0.9995579133510168,
+								0.07795494811440142,
+								1,
+								0.0002531004808909137,
+								0.9991158267020336
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 331581855917588,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

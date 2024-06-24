@@ -1,0 +1,211 @@
+{
+	"name": "TandaBaca_Finish",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 324161802276246
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "btnScoreHOME",
+					"sid": 727500949206905,
+					"parameters": {
+						"instance-variable": "btn_gameX",
+						"value": "Self.Width"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "btnScoreHOME",
+					"sid": 383528379454251,
+					"parameters": {
+						"instance-variable": "btn_gameY",
+						"value": "Self.Height"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "btnScoreKEMBALI",
+					"sid": 884439164120668,
+					"parameters": {
+						"instance-variable": "btn_gameX",
+						"value": "Self.Width"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "btnScoreKEMBALI",
+					"sid": 419247760605472,
+					"parameters": {
+						"instance-variable": "btn_gameY",
+						"value": "Self.Height"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "scoreFinal",
+					"sid": 962290273322029,
+					"parameters": {
+						"text": "skor_1"
+					}
+				}
+			],
+			"sid": 363086194948940
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 873454935914384,
+					"parameters": {
+						"object": "btnScoreHOME",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-two-properties",
+					"objectClass": "btnScoreHOME",
+					"sid": 248374572307777,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "Self.btn_gameX+50",
+						"end-y": "Self.btn_gameY+50",
+						"time": "0.2",
+						"ease": "easeoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 153011876980852,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "btnScoreHOME",
+					"sid": 915449157958667,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "Self.btn_gameX",
+						"end-y": "Self.btn_gameY",
+						"time": "0.2",
+						"ease": "easeinback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 565660396641891,
+					"parameters": {
+						"layout": "HalamanMenu"
+					}
+				},
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 192261605474709
+				}
+			],
+			"sid": 764178112142054
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 744311454966345,
+					"parameters": {
+						"object": "btnScoreKEMBALI",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-two-properties",
+					"objectClass": "btnScoreKEMBALI",
+					"sid": 520900021557500,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "Self.btn_gameX+50",
+						"end-y": "Self.btn_gameY+50",
+						"time": "0.2",
+						"ease": "easeoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 575608459883394,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "btnScoreKEMBALI",
+					"sid": 137779842273562,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "Self.btn_gameX",
+						"end-y": "Self.btn_gameY",
+						"time": "0.2",
+						"ease": "easeinback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 990318418972832,
+					"parameters": {
+						"layout": "TandaBaca_Awal"
+					}
+				},
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 267161890168379
+				}
+			],
+			"sid": 910144019850657
+		}
+	],
+	"sid": 363436267252998
+}

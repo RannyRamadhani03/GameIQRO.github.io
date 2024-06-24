@@ -1,0 +1,47 @@
+{
+	"name": "speedBG",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "speedBG",
+			"type": "number",
+			"initialValue": "200",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 124129186755809
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "TiledBG",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 820737561964474
+						}
+					],
+					"actions": [
+						{
+							"id": "set-image-offset-x",
+							"objectClass": "FamilyBG",
+							"sid": 478217280073161,
+							"parameters": {
+								"offset-x": "Self.ImageOffsetX-speedBG*dt"
+							}
+						}
+					],
+					"sid": 115928220470478
+				}
+			],
+			"sid": 401975312307899
+		}
+	],
+	"sid": 832834871815655
+}

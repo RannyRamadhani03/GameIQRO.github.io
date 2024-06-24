@@ -1,0 +1,1752 @@
+{
+	"name": "MenuIQROEventsheet1",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "speedBG"
+		},
+		{
+			"eventType": "variable",
+			"name": "HalamanMenuIQRO",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 873306651868650
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "ON START LAYOUT MenuQIRO",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 374420485084793
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnKembali",
+							"sid": 455160459760556,
+							"parameters": {
+								"instance-variable": "UkuranX",
+								"value": "Self.Width"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnKembali",
+							"sid": 650478891686007,
+							"parameters": {
+								"instance-variable": "UkuranY",
+								"value": "Self.Height"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnSelanjutnya",
+							"sid": 240068027640692,
+							"parameters": {
+								"instance-variable": "UkuranX",
+								"value": "Self.Width"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnSelanjutnya",
+							"sid": 826627347325125,
+							"parameters": {
+								"instance-variable": "UkuranY",
+								"value": "Self.Height"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnMateri_sifat",
+							"sid": 835013543297813,
+							"parameters": {
+								"instance-variable": "UkuranX",
+								"value": "Self.Width"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "btnMateri_sifat",
+							"sid": 817867673560522,
+							"parameters": {
+								"instance-variable": "UkuranY",
+								"value": "Self.Height"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "BtnKuisIqro",
+							"sid": 930887698715995,
+							"parameters": {
+								"instance-variable": "UkuranX",
+								"value": "Self.Width"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "BtnKuisIqro",
+							"sid": 563109808533801,
+							"parameters": {
+								"instance-variable": "UkuranY",
+								"value": "Self.Height"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Jilid1",
+							"sid": 450119236236711,
+							"parameters": {
+								"instance-variable": "UkuranX",
+								"value": "Self.Width"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Jilid1",
+							"sid": 379678105934108,
+							"parameters": {
+								"instance-variable": "UkuranY",
+								"value": "Self.Height"
+							}
+						},
+						{
+							"id": "reset-global-variables",
+							"objectClass": "System",
+							"sid": 496497197226479
+						}
+					],
+					"sid": 768884007553002
+				}
+			],
+			"sid": 277067831334038
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "SizeLayout MenuQIRO",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 617457571988918,
+							"parameters": {
+								"object": "btnKembali"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 946755853098470,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-any-touch-end",
+									"objectClass": "Touch",
+									"sid": 921982084419179
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 322421561053852,
+									"parameters": {
+										"layout": "BelajarYuk"
+									}
+								}
+							],
+							"sid": 103027330314393
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 303705768373098,
+							"parameters": {
+								"object": "BtnKuisIqro"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 275969337114298,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-any-touch-end",
+									"objectClass": "Touch",
+									"sid": 628972983158368
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 310635008957868,
+									"parameters": {
+										"layout": "Iqro_Awal"
+									}
+								}
+							],
+							"sid": 198525674150164
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 996096908895067,
+							"parameters": {
+								"object": "BtnKuisIqro",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-two-properties",
+							"objectClass": "BtnKuisIqro",
+							"sid": 800148420179278,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "Self.UkuranX+50",
+								"end-y": "Self.UkuranY+50",
+								"time": "0.2",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 251450304077913,
+							"parameters": {
+								"seconds": "0.2"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "BtnKuisIqro",
+							"sid": 873458487785445,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "Self.UkuranX",
+								"end-y": "Self.UkuranY",
+								"time": "0.2",
+								"ease": "easeinback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						}
+					],
+					"sid": 392641133758674
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 663931313291146,
+							"parameters": {
+								"object": "btnKembali",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-two-properties",
+							"objectClass": "btnKembali",
+							"sid": 457104441429063,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "Self.UkuranX+50",
+								"end-y": "Self.UkuranY+50",
+								"time": "0.2",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 463665187052231,
+							"parameters": {
+								"seconds": "0.2"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "btnKembali",
+							"sid": 179265901178753,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "Self.UkuranX",
+								"end-y": "Self.UkuranY",
+								"time": "0.2",
+								"ease": "easeinback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						}
+					],
+					"sid": 219108118713623
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 459409541427052,
+							"parameters": {
+								"object": "Jilid1",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-two-properties",
+							"objectClass": "Jilid1",
+							"sid": 646481556118552,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "Self.UkuranX+30",
+								"end-y": "Self.UkuranY+30",
+								"time": "0.2",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 755346069045913,
+							"parameters": {
+								"seconds": "0.2"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "Jilid1",
+							"sid": 220283955098146,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "Self.UkuranX",
+								"end-y": "Self.UkuranY",
+								"time": "0.2",
+								"ease": "easeinback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						}
+					],
+					"sid": 866829831345393
+				}
+			],
+			"sid": 669894390458918
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "FunctionLayout MenuQIRO",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"functionName": "MenuIQRO",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 507222900950968,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 122608685174572,
+									"parameters": {
+										"variable": "HalamanMenuIQRO",
+										"comparison": 0,
+										"value": "0"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 890683664173885,
+									"parameters": {
+										"comparison": 0,
+										"number": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 957306829519279,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 360702326890050,
+									"parameters": {
+										"layout": "Iqro_1"
+									}
+								}
+							],
+							"sid": 924220453217326
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 631744353774392,
+									"parameters": {
+										"variable": "HalamanMenuIQRO",
+										"comparison": 0,
+										"value": "1"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 715095057976697,
+									"parameters": {
+										"comparison": 0,
+										"number": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 435027033425748,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 610829524568154,
+									"parameters": {
+										"layout": "Iqro_2"
+									}
+								}
+							],
+							"sid": 782353521165838
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 844111946818875,
+									"parameters": {
+										"variable": "HalamanMenuIQRO",
+										"comparison": 0,
+										"value": "2"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 224832381531481,
+									"parameters": {
+										"comparison": 0,
+										"number": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 734979189379702,
+									"parameters": {
+										"frame-number": "2"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 444231375304056,
+									"parameters": {
+										"layout": "Iqro_3"
+									}
+								}
+							],
+							"sid": 746474583733244
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 800580407484327,
+									"parameters": {
+										"variable": "HalamanMenuIQRO",
+										"comparison": 0,
+										"value": "3"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 311705362652681,
+									"parameters": {
+										"comparison": 0,
+										"number": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 152324760784040,
+									"parameters": {
+										"frame-number": "3"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 330925063123220,
+									"parameters": {
+										"layout": "Iqro_4"
+									}
+								}
+							],
+							"sid": 322105441599441
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 430656078593274,
+									"parameters": {
+										"variable": "HalamanMenuIQRO",
+										"comparison": 0,
+										"value": "4"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 793821192254837,
+									"parameters": {
+										"comparison": 0,
+										"number": "4"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 381875540295676,
+									"parameters": {
+										"frame-number": "4"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 379749498947502,
+									"parameters": {
+										"layout": "Iqro_5"
+									}
+								}
+							],
+							"sid": 597522750042609
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 804494037357535,
+									"parameters": {
+										"variable": "HalamanMenuIQRO",
+										"comparison": 0,
+										"value": "5"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 691238618949909,
+									"parameters": {
+										"comparison": 0,
+										"number": "5"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 789299185437489,
+									"parameters": {
+										"frame-number": "5"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 377887478588343,
+									"parameters": {
+										"layout": "Iqro_6"
+									}
+								}
+							],
+							"sid": 601583386008720
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 830010390679681,
+									"parameters": {
+										"variable": "HalamanMenuIQRO",
+										"comparison": 0,
+										"value": "6"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 550747762791188,
+									"parameters": {
+										"comparison": 0,
+										"number": "6"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 783705003246120,
+									"parameters": {
+										"frame-number": "6"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 305811834832430,
+									"parameters": {
+										"layout": "Iqro_7"
+									}
+								}
+							],
+							"sid": 741762902348970
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 899100947574273,
+									"parameters": {
+										"variable": "HalamanMenuIQRO",
+										"comparison": 0,
+										"value": "7"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 828689931250004,
+									"parameters": {
+										"comparison": 0,
+										"number": "7"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 609121335845099,
+									"parameters": {
+										"frame-number": "7"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 880908320393035,
+									"parameters": {
+										"layout": "Iqro_8"
+									}
+								}
+							],
+							"sid": 530941576497674
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 472919693202419,
+									"parameters": {
+										"variable": "HalamanMenuIQRO",
+										"comparison": 0,
+										"value": "8"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 534007781057785,
+									"parameters": {
+										"comparison": 0,
+										"number": "8"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 394208171696945,
+									"parameters": {
+										"frame-number": "8"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 693215465218418,
+									"parameters": {
+										"layout": "Iqro_9"
+									}
+								}
+							],
+							"sid": 255515124526827
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 618767874514968,
+									"parameters": {
+										"variable": "HalamanMenuIQRO",
+										"comparison": 0,
+										"value": "9"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 792188892119725,
+									"parameters": {
+										"comparison": 0,
+										"number": "9"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 774657738689216,
+									"parameters": {
+										"frame-number": "9"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 105472442087689,
+									"parameters": {
+										"layout": "Iqro_10"
+									}
+								}
+							],
+							"sid": 755113681124041
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 304478619179491,
+									"parameters": {
+										"variable": "HalamanMenuIQRO",
+										"comparison": 0,
+										"value": "10"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 985871870481020,
+									"parameters": {
+										"comparison": 0,
+										"number": "10"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 687989895594864,
+									"parameters": {
+										"frame-number": "10"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 326133668003196,
+									"parameters": {
+										"layout": "Iqro_11"
+									}
+								}
+							],
+							"sid": 213525711855029
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 547240555449920,
+									"parameters": {
+										"variable": "HalamanMenuIQRO",
+										"comparison": 0,
+										"value": "11"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 167705390698560,
+									"parameters": {
+										"comparison": 0,
+										"number": "11"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 698068274071656,
+									"parameters": {
+										"frame-number": "11"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 550769133977597,
+									"parameters": {
+										"layout": "Iqro_12"
+									}
+								}
+							],
+							"sid": 605582269702685
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 242027612901340,
+									"parameters": {
+										"variable": "HalamanMenuIQRO",
+										"comparison": 0,
+										"value": "12"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 828829615716813,
+									"parameters": {
+										"comparison": 0,
+										"number": "12"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 505331775125211,
+									"parameters": {
+										"frame-number": "12"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 312070687936979,
+									"parameters": {
+										"layout": "Iqro_13"
+									}
+								}
+							],
+							"sid": 862712638290788
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 242008455136802,
+									"parameters": {
+										"variable": "HalamanMenuIQRO",
+										"comparison": 0,
+										"value": "13"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 261946121943112,
+									"parameters": {
+										"comparison": 0,
+										"number": "13"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 783237953137155,
+									"parameters": {
+										"frame-number": "13"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 866494036498538,
+									"parameters": {
+										"layout": "Iqro_14"
+									}
+								}
+							],
+							"sid": 524455667511557
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 515081779423224,
+									"parameters": {
+										"variable": "HalamanMenuIQRO",
+										"comparison": 0,
+										"value": "14"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 679845336254500,
+									"parameters": {
+										"comparison": 0,
+										"number": "14"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 590575969027313,
+									"parameters": {
+										"frame-number": "14"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 209922780529783,
+									"parameters": {
+										"layout": "Iqro_15"
+									}
+								}
+							],
+							"sid": 178813619383774
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 370576837275422,
+									"parameters": {
+										"variable": "HalamanMenuIQRO",
+										"comparison": 0,
+										"value": "15"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 364282632531483,
+									"parameters": {
+										"comparison": 0,
+										"number": "15"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 325916464971111,
+									"parameters": {
+										"frame-number": "15"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 666098111454059,
+									"parameters": {
+										"layout": "Iqro_16"
+									}
+								}
+							],
+							"sid": 979533734436746
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 702301186288954,
+									"parameters": {
+										"variable": "HalamanMenuIQRO",
+										"comparison": 0,
+										"value": "16"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 580169780653065,
+									"parameters": {
+										"comparison": 0,
+										"number": "16"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 964649045254642,
+									"parameters": {
+										"frame-number": "16"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 887774838497332,
+									"parameters": {
+										"layout": "Iqro_17"
+									}
+								}
+							],
+							"sid": 440777314829505
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 228232264568004,
+									"parameters": {
+										"variable": "HalamanMenuIQRO",
+										"comparison": 0,
+										"value": "17"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 139322827231641,
+									"parameters": {
+										"comparison": 0,
+										"number": "17"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 113966607035082,
+									"parameters": {
+										"frame-number": "17"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 772027018026329,
+									"parameters": {
+										"layout": "Iqro_18"
+									}
+								}
+							],
+							"sid": 717807942916773
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 706159530341538,
+									"parameters": {
+										"variable": "HalamanMenuIQRO",
+										"comparison": 0,
+										"value": "18"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 459271779410367,
+									"parameters": {
+										"comparison": 0,
+										"number": "18"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 692129527101464,
+									"parameters": {
+										"frame-number": "18"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 838287436181096,
+									"parameters": {
+										"layout": "Iqro_19"
+									}
+								}
+							],
+							"sid": 513204941437482
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 755653070919359,
+									"parameters": {
+										"variable": "HalamanMenuIQRO",
+										"comparison": 0,
+										"value": "19"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 911177072700539,
+									"parameters": {
+										"comparison": 0,
+										"number": "19"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 472327617602877,
+									"parameters": {
+										"frame-number": "19"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 145530538588126,
+									"parameters": {
+										"layout": "Iqro_20"
+									}
+								}
+							],
+							"sid": 645997552295663
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 569863560897247,
+									"parameters": {
+										"variable": "HalamanMenuIQRO",
+										"comparison": 0,
+										"value": "20"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 744608728115193,
+									"parameters": {
+										"comparison": 0,
+										"number": "20"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 688670355035588,
+									"parameters": {
+										"frame-number": "20"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 176741850666595,
+									"parameters": {
+										"layout": "Iqro_21"
+									}
+								}
+							],
+							"sid": 342144178413307
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 394386333744636,
+									"parameters": {
+										"variable": "HalamanMenuIQRO",
+										"comparison": 0,
+										"value": "21"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 631500633313235,
+									"parameters": {
+										"comparison": 0,
+										"number": "21"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 187579799504600,
+									"parameters": {
+										"frame-number": "21"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 939078245063156,
+									"parameters": {
+										"layout": "Iqro_22"
+									}
+								}
+							],
+							"sid": 938440725374405
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 559486628488088,
+									"parameters": {
+										"variable": "HalamanMenuIQRO",
+										"comparison": 0,
+										"value": "22"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 240296853706023,
+									"parameters": {
+										"comparison": 0,
+										"number": "22"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 914738115650898,
+									"parameters": {
+										"frame-number": "22"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 803104435917043,
+									"parameters": {
+										"layout": "Iqro_23"
+									}
+								}
+							],
+							"sid": 868724367253274
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 473554285753247,
+									"parameters": {
+										"variable": "HalamanMenuIQRO",
+										"comparison": 0,
+										"value": "23"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 755253085781790,
+									"parameters": {
+										"comparison": 0,
+										"number": "23"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 703534219823457,
+									"parameters": {
+										"frame-number": "23"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 894482338688593,
+									"parameters": {
+										"layout": "Iqro_24"
+									}
+								}
+							],
+							"sid": 852466545176040
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 483752833525678,
+									"parameters": {
+										"variable": "HalamanMenuIQRO",
+										"comparison": 0,
+										"value": "24"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 561853103930947,
+									"parameters": {
+										"comparison": 0,
+										"number": "24"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 453324214909089,
+									"parameters": {
+										"frame-number": "24"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 254264964124964,
+									"parameters": {
+										"layout": "Iqro_25"
+									}
+								}
+							],
+							"sid": 453858309221875
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 691225190855109,
+									"parameters": {
+										"variable": "HalamanMenuIQRO",
+										"comparison": 0,
+										"value": "25"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 757435394683854,
+									"parameters": {
+										"comparison": 0,
+										"number": "25"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 855533566247741,
+									"parameters": {
+										"frame-number": "25"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 796922085336888,
+									"parameters": {
+										"layout": "Iqro_26"
+									}
+								}
+							],
+							"sid": 652455250960428
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 782341124089666,
+									"parameters": {
+										"variable": "HalamanMenuIQRO",
+										"comparison": 0,
+										"value": "26"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 754272150189415,
+									"parameters": {
+										"comparison": 0,
+										"number": "26"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 354732387592173,
+									"parameters": {
+										"frame-number": "26"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 421098266241497,
+									"parameters": {
+										"layout": "Iqro_27"
+									}
+								}
+							],
+							"sid": 573785304139238
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 511092870360258,
+									"parameters": {
+										"variable": "HalamanMenuIQRO",
+										"comparison": 0,
+										"value": "27"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 385001691417702,
+									"parameters": {
+										"comparison": 0,
+										"number": "27"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 163526138997486,
+									"parameters": {
+										"frame-number": "27"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 864496942754599,
+									"parameters": {
+										"layout": "Iqro_28"
+									}
+								}
+							],
+							"sid": 973641207695625
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 311753358459726,
+									"parameters": {
+										"variable": "HalamanMenuIQRO",
+										"comparison": 0,
+										"value": "28"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 319936754591568,
+									"parameters": {
+										"comparison": 0,
+										"number": "28"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 759479574314516,
+									"parameters": {
+										"frame-number": "28"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 628917225197252,
+									"parameters": {
+										"layout": "Iqro_29"
+									}
+								}
+							],
+							"sid": 208791594167089
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 699881644369554,
+									"parameters": {
+										"variable": "HalamanMenuIQRO",
+										"comparison": 0,
+										"value": "29"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 433738455306026,
+									"parameters": {
+										"comparison": 0,
+										"number": "29"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Jilid1",
+									"sid": 898385700917139,
+									"parameters": {
+										"frame-number": "29"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 755404434341084,
+									"parameters": {
+										"layout": "Iqro_30"
+									}
+								}
+							],
+							"sid": 372844774635975
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 803444128075027,
+							"parameters": {
+								"object": "Jilid1",
+								"type": "start"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 446546637187654,
+							"parameters": {
+								"variable": "HalamanMenuIQRO",
+								"value": "Jilid1.AnimationFrame"
+							}
+						},
+						{
+							"callFunction": "MenuIQRO",
+							"sid": 837686215509285
+						}
+					],
+					"sid": 461292149491124
+				}
+			],
+			"sid": 531052223319701
+		}
+	],
+	"sid": 389937742520204
+}

@@ -1,0 +1,96 @@
+{
+	"name": "btnFathah",
+	"plugin-id": "Sprite",
+	"sid": 419948585932734,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "UkuranX",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 580475103545460
+		},
+		{
+			"name": "UkuranY",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 848919736723627
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 392363911536853
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 999,
+						"height": 1012,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1247121,
+						"collisionPoly": {
+							"points": [
+								0.08620689655172414,
+								0.0641025641025641,
+								0.9630541871921182,
+								0.13141025641025642,
+								0.9150246305418719,
+								0.9358974358974359,
+								0.038177339901477834,
+								0.8685897435897436
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 999,
+						"height": 1012,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7169268,
+						"collisionPoly": {
+							"points": [
+								0.011660188784008884,
+								0.009389671361502348,
+								0.9927817878956136,
+								0.018779342723004695,
+								0.9888950583009439,
+								0.9953051643192489,
+								0.007773459189339256,
+								0.9859154929577465
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 665424937266155,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,50 @@
+{
+	"name": "bgLoader",
+	"plugin-id": "Sprite",
+	"sid": 580782490579306,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 949,
+						"height": 177,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3865506,
+						"collisionPoly": {
+							"points": [
+								0.050746268656716415,
+								0.0055248618784530384,
+								0.9651741293532339,
+								0.027624309392265192,
+								0.9502487562189055,
+								0.994475138121547,
+								0.03582089552238806,
+								0.9723756906077348
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 248236635030307,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

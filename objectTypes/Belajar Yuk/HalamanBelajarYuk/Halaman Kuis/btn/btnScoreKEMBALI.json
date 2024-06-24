@@ -1,0 +1,75 @@
+{
+	"name": "btnScoreKEMBALI",
+	"plugin-id": "Sprite",
+	"sid": 358894601628282,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "btn_gameX",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 973861078668348
+		},
+		{
+			"name": "btn_gameY",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 879421841752278
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 347411032056392
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 491,
+						"height": 371,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5418399,
+						"collisionPoly": {
+							"points": [
+								0.1120162932790224,
+								0.005390835579514825,
+								0.9877800407331976,
+								0.10512129380053908,
+								0.9979633401221996,
+								0.15633423180592992,
+								0.9918533604887984,
+								0.8814016172506739,
+								0.8879837067209776,
+								0.9946091644204852,
+								0.004073319755600814,
+								0.8517520215633423
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 834168609274188,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,56 @@
+{
+	"name": "bgTasydid",
+	"plugin-id": "Sprite",
+	"sid": 912540180106775,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 577105819539031
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1920,
+						"height": 1080,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2423974,
+						"collisionPoly": {
+							"points": [
+								0.0007600709399543957,
+								0.001323918799646955,
+								0.9992399290600456,
+								0.00176522506619594,
+								0.9989865720800608,
+								0.999117387466902,
+								0.0005067139599695972,
+								0.998676081200353
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 988315933764247,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}
